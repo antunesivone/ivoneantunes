@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivone Antunes — Portfolio</title>
+<meta name="description" content="Portfolio de desenvolvedor(a) — projetos, serviços e contato.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__brand-bracket">&lt;</span>Ivone Antunes<span class="nav__brand-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link"><span class="nav__num"></span>Sobre</a>
+      <a href="#services" class="nav__link"><span class="nav__num"></span>Serviços</a>
+      <a href="#projects" class="nav__link"><span class="nav__num"></span>Portfólio</a>
+      <a href="#skills" class="nav__link"><span class="nav__num"></span>Skills</a>
+      <a href="#qualifications" class="nav__link"><span class="nav__num"></span>Qualificações</a>
+      <a href="blog.html" class="nav__link"><span class="nav__num"></span>Blog</a>
+      <a href="#fun-facts" class="nav__link"><span class="nav__num"></span>Curiosidades</a>
+      <a href="#contact" class="nav__link nav__link--cta">Contato</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1 class="hero__title">Ivone Antunes<span class="hero__cursor">_</span></h1>
+        <p class="hero__role">Desenvolvedora de Software</p>
+        <p class="hero__desc">
+          Desenvolvo sistemas, integrações e soluções sob medida, com vivência prática
+          em negócios de varejo (e-commerce), logística &amp; mobilidade, agronegócio e saúde
+          pública — unindo código bem estruturado a entendimento real de processo e de regra
+          de negócio.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">Ver portfólio</a>
+          <a href="#contact" class="btn btn--ghost">Falar comigo</a>
+        </div>
+      </div>
+
+      <div class="hero__terminal" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">sobre-mim.js</span>
+          </div>
+          <pre class="terminal__body"><code id="typedCode"></code><span class="terminal__blink">|</span></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <h2 class="section__title">Sobre mim</h2>
+
+    <div class="about__grid">
+      <div class="about__photo">
+        <div class="about__photo-frame">
+          <img loading="lazy" decoding="async" src="img/eudev.webp" alt="Foto sobre perfil">
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="about__bio">
+        Sou Ivone Antunes, desenvolvedora de software em Piracicaba-SP, com 3+ anos de experiência profissional
+        unindo código, processo e regra de negócio em quatro setores: <strong>varejo (e-commerce)</strong>,
+        <strong>logística &amp; mobilidade</strong>, <strong>agronegócio</strong> e <strong>saúde pública</strong>.
+
+        <br><br>Graduação em Engenharia da Computação (IFSP) complementada por um programa de residência
+        tecnológica em desenvolvimento e Gestão de Projetos & Empreendedorismo — base que une
+        lógica de programação a visão de processo e de produto.
+
+        <br><br>Em <strong>varejo (e-commerce)</strong>, apliquei esse raciocínio a lojas virtuais e catálogos —
+        prova social, redução de fricção no checkout e gestão de estoque. Em <strong>logística e mobilidade</strong>,
+        acompanhei a digitalização do transporte de combustíveis — rastreabilidade, SSMA, faturamento e agendamento
+        de terminais. No <strong>agronegócio</strong>, dei suporte a sistemas de agricultura de precisão e
+        logística de safra, integrados a ERP. Em <strong>saúde pública</strong>, operei sistemas de governo e do
+        SUS, lidando com dados sensíveis e com os desafios reais de usabilidade e confiabilidade que plataformas
+        públicas enfrentam no dia a dia.
+
+        <br><br>Mais recentemente, atuei como Assistente Eleitoral, responsável por QA (testes) de hardware e
+        software de urnas eletrônicas, elaboração de relatórios técnicos e supervisão de pessoas e processos
+        durante o período eleitoral.
+
+        <br><br>Hoje uno essas vivências ao desenvolvimento de software — consumo de APIs RESTful, integração de
+        Inteligência Artificial e boas práticas de segurança — com experiência prática em sistemas corporativos
+        como ServiceNow, SAP/ERP e DATASUS, além de metodologias ágeis (Scrum/Squad). Estou disponível para
+        oportunidades como desenvolvedora de software, com interesse em produtos que cruzam tecnologia com varejo,
+        logística, agronegócio ou saúde.
+
+        <br><br>Essa vivência profissional ganha continuidade no meu <a href="#projects" class="link-arrow">portfólio</a>,
+        que aplica o mesmo raciocínio de negócio a novos catálogos e sistemas de gestão e logística — iniciativas
+        que unem estudo, código e regra de negócio.
+
+        <br><br>Estudo continuamente, participo de comunidades tech, fui mentora voluntária e treinei para
+        maratonas de programação — experiências que fortaleceram meu raciocínio lógico sob pressão, trabalho em
+        equipe e comunicação.
+        </p>
+
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__value">3+</span>
+            <span class="stat__label">Anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Piracicaba-SP</span>
+            <span class="stat__label">Localização</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">4 setores</span>
+            <span class="stat__label">Varejo, Logística, Agro & Saúde</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">Imediata</span>
+            <span class="stat__label">Disponibilidade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section section--alt" id="services">
+    <h2 class="section__title">Serviços que eu faço</h2>
+    <p class="section__subtitle">Soluções sob medida, da ideia ao deploy.</p>
+
+    <div class="cards-grid">
+      <article class="card">
+        <span class="card__icon">🖥️</span>
+        <h3 class="card__title">Desenvolvimento de Software</h3>
+        <p class="card__desc">Aplicações responsivas e performáticas com as tecnologias do mercado.</p>
+        <ul class="tag-list">
+          <li>JavaScript</li><li>HTML5, CSS3, SASS</li><li>Bootstrap</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="card__icon">🔧</span>
+        <h3 class="card__title">Backend & APIs</h3>
+        <p class="card__desc">APIs robustas e escaláveis, com foco em performance, segurança e boas práticas.</p>
+        <ul class="tag-list">
+          <li>Node.js</li><li>Express</li><li>Python</li><li>PostgreSQL</li><li>MySQL</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="card__icon">🔗</span>
+        <h3 class="card__title">Integração de Sistemas</h3>
+        <p class="card__desc">Conectando ferramentas e automatizando processos para otimizar o dia a dia do seu negócio.</p>
+        <ul class="tag-list">
+          <li>APIs REST</li><li>Webhooks</li><li>Microserviços</li><li>IA</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__icon">🎨</span>
+        <h3 class="card__title">Plataformas e Integração de Sistemas</h3>
+        <p class="card__desc">Criação e customização de sites, blogs e lojas virtuais, além de experiência com ServiceNow na gestão de serviços de TI (ITSM), governança e controle de processos e fluxos corporativos.</p>
+        <ul class="tag-list">
+          <li>WordPress (blog/CMS)</li>
+          <li>ServiceNow (ITSM)</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__icon">🧪</span>
+        <h3 class="card__title">QA & Testes de Software</h3>
+        <p class="card__desc">Experiência prática com testes de hardware e software em ambiente de alta criticidade (urnas eletrônicas do TRE-SP), aplicando protocolos de qualidade, checklists e rastreabilidade também a projetos de desenvolvimento de software.</p>
+        <ul class="tag-list">
+          <li>Testes funcionais</li><li>Checklists e protocolos de QA</li><li>Relatórios técnicos</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__icon">🧩</span>
+        <h3 class="card__title">Soluções para Setores Regulados</h3>
+        <p class="card__desc">Tradução de regras de negócio de setores com alta criticidade operacional e de dados — logística & mobilidade, agronegócio e saúde pública — em requisitos técnicos, testes e entregas de software.</p>
+        <ul class="tag-list">
+          <li>Logística & Mobilidade</li><li>Agronegócio / Agricultura de Precisão</li><li>Saúde Pública (SUS/DATASUS)</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="card__icon">🎨</span>
+        <h3 class="card__title">UI/UX Design</h3>
+        <p class="card__desc">Interfaces intuitivas, acessíveis e alinhadas com a identidade da marca.</p>
+        <ul class="tag-list">
+          <li>Figma</li><li>Prototipagem</li><li>Design System</li>
+        </ul>
+      </article>
+       <article class="card">
+        <span class="card__icon">🎨</span>
+        <h3 class="card__title">Ferramentas de Gestão e Metodologia</h3>
+        <p class="card__desc">Atuação em squads multidisciplinares e nas cerimônias do Scrum (sprints, dailys, plannings e retrospectivas), com foco em entregas incrementais e colaboração entre áreas técnicas e de negócio.</p>
+        <ul class="tag-list">
+          <li>Scrum / Squad (metodologias ágeis)</li>
+        </ul>
+      </article>
+       </article>
+       <article class="card">
+        <span class="card__icon">🎨</span>
+        <h3 class="card__title">Interpretação de Regras de Negócio</h3>
+        <p class="card__desc">Interpretação de regras de negócio junto a times, clientes e stakeholders, com documentação de requisitos, estimativa de esforço, escrita de casos de teste e alinhamento de entregas — aplicados à implementação frontend, automação e desenvolvimento de software.</p>
+        <ul class="tag-list">
+          <li>Requisitos, Testes e Alinhamento de Entregas</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="cta-banner">
+      <p>Tem um projeto em mente? Vamos conversar!</p>
+      <a href="#contact" class="btn btn--primary">Entre em contato</a>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <h2 class="section__title">Portfólio</h2>
+    <p class="section__subtitle">
+      Iniciativas pessoais que unem estudo, código e regras de negócio — construídas para
+      aplicar o que aprendo a problemas reais de e-commerce/varejo, logística, gestão
+      empresarial e saúde pública.
+    </p>
+
+    <div class="project-filters" role="tablist">
+      <button class="project-filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      <button class="project-filter" data-filter="ecommerce" role="tab" aria-selected="false">E-commerce & Varejo</button>
+      <button class="project-filter" data-filter="logistica" role="tab" aria-selected="false">Logística & Operações</button>
+      <button class="project-filter" data-filter="empresas" role="tab" aria-selected="false">Empresas & Gestão</button>
+      <button class="project-filter" data-filter="ia" role="tab" aria-selected="false">IA & Produto</button>
+      <button class="project-filter" data-filter="agro" role="tab" aria-selected="false">Agronegócio</button>
+      <button class="project-filter" data-filter="saude" role="tab" aria-selected="false">Saúde & Gestão</button>
+    </div>
+
+    <!-- Links de repositório/demo ainda não preenchidos — trocar os href="#" pelos links reais
+         (GitHub/deploy) e as imagens placehold.co por screenshots reais quando publicar. -->
+    <div class="projects-grid">
+      <article class="project-card" data-category="ecommerce">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/taro-01-hero.webp" alt="Tela inicial do Tarô Oráculo">
+            <img loading="lazy" decoding="async" data-src="img/taro-02-pergunta-tiragem.webp" alt="Passo 1 e 2: pergunta e escolha da tiragem">
+            <img loading="lazy" decoding="async" data-src="img/taro-03-embaralhar.webp" alt="Passo 3: concentração e embaralhar as cartas">
+            <img loading="lazy" decoding="async" data-src="img/taro-04-mesa.webp" alt="Mesa com as cartas reveladas">
+            <img loading="lazy" decoding="async" data-src="img/taro-05-leitura.webp" alt="Leitura interpretativa com dignidades elementais e contexto estatístico">
+            <img loading="lazy" decoding="async" data-src="img/taro-06-loja-categorias.webp" alt="Loja Mística Venus: categorias de produtos">
+            <img loading="lazy" decoding="async" data-src="img/taro-07-loja-ofertas.webp" alt="Vitrine de ofertas com prova social e escassez">
+            <img loading="lazy" decoding="async" data-src="img/taro-08-quickview.webp" alt="Quick View do produto">
+            <img loading="lazy" decoding="async" data-src="img/taro-09-similares.webp" alt="Produtos similares recomendados no Quick View">
+            <img loading="lazy" decoding="async" data-src="img/taro-10-lista-desejos.webp" alt="Lista de desejos">
+            <img loading="lazy" decoding="async" data-src="img/taro-11-carrinho.webp" alt="Carrinho e revisão do pedido">
+            <img loading="lazy" decoding="async" data-src="img/taro-12-depoimentos.webp" alt="Depoimentos de clientes">
+            <img loading="lazy" decoding="async" data-src="img/taro-13-contato.webp" alt="Página de contato">
+            <img loading="lazy" decoding="async" data-src="img/taro-14-alto-contraste.webp" alt="Modo de alto contraste (acessibilidade)">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">E-commerce & Varejo</span>
+          <h3 class="project-card__title">Tarô Oráculo & Loja Mística Venus</h3>
+          <p class="project-card__desc"><strong>Proposta de jogo</strong> de tiragens de Tarô (78 arcanos, 3 modos de leitura, dignidades elementais entre cartas) e, no mesmo repositório, a Loja Mística Venus — extensão natural de monetização do mesmo público esotérico, não um catálogo genérico anexado. A loja reproduz mecanismos reais de varejo (ancoragem de preço, prova social, gatilho de escassez, checkout sem fricção) para converter interesse em venda.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>JavaScript</li><li>Web Audio API</li><li>Web Crypto API</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecommerce">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/ladyella-01-banner.webp" alt="Banner da nova coleção — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-00-promocao.webp" alt="Banner de promoção com cupom de desconto — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-02-home.webp" alt="Home: benefícios, categorias e novidades — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-screenshot.webp" alt="Grade de produtos do catálogo — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-03-quickview.webp" alt="Quick View do produto: fotos, avaliação, cor, tamanho e similares — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-04-login.webp" alt="Modal de login e cadastro — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-05-carrinho.webp" alt="Carrinho de compras — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-06-favoritos.webp" alt="Lista de desejos — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-07-whatsapp.webp" alt="Finalização do pedido pronta no WhatsApp — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-08-looks.webp" alt="Looks da loja em clientes reais (UGC) — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-09-depoimentos.webp" alt="Depoimentos de clientes e FAQ — Lady Ella">
+            <img loading="lazy" decoding="async" data-src="img/ladyella-10-footer.webp" alt="Rodapé institucional — Lady Ella">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">E-commerce & Varejo</span>
+          <h3 class="project-card__title">Lady Ella — Catálogo de Moda</h3>
+          <p class="project-card__desc">Vitrine digital de moda, calçados, acessórios e cosméticos para uma loja que vende por WhatsApp — sem o custo e a complexidade de um e-commerce completo. A interface foi elaborada para <strong>direcionar o cliente à compra sem deixá-lo perdido</strong>: banner de promoção com indicação de cupom logo na home, e, na página do produto, avaliação por estrelas de outros clientes, múltiplas fotos do item, seletor de cor e tamanho e indicação de peças similares reduzem a incerteza de comprar à distância. Filtros por categoria, material e cuidados ajudam a encontrar a peça certa sem precisar perguntar, e looks reais de clientes reforçam essa confiança como vitrine viva da marca. "Comprar" já monta a mensagem de WhatsApp pronta — zero custo de hospedagem, e a própria loja edita o catálogo sem programar.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>JavaScript</li><li>Bootstrap</li><li>WhatsApp Checkout</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecommerce">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/aroma-01-hero.webp" alt="Hero com botão Ver Catálogo, prova social e WhatsApp">
+            <img loading="lazy" decoding="async" data-src="img/aroma-02-catalogo.webp" alt="Catálogo com filtros por categoria, preço e busca">
+            <img loading="lazy" decoding="async" data-src="img/aroma-03-vitrines.webp" alt="Vitrines de Mais Vendidos, Novidades e Vistos Recentemente">
+            <img loading="lazy" decoding="async" data-src="img/aroma-04-detalhe.webp" alt="Modal de detalhes do produto com harmonização e formas de pagamento">
+            <img loading="lazy" decoding="async" data-src="img/aroma-05-destaque.webp" alt="Imagem do produto em destaque">
+            <img loading="lazy" decoding="async" data-src="img/aroma-06-similares.webp" alt="Produtos recomendados: Você também pode gostar">
+            <img loading="lazy" decoding="async" data-src="img/aroma-07-lista-desejos.webp" alt="Lista de desejos com compra direta via WhatsApp">
+            <img loading="lazy" decoding="async" data-src="img/aroma-08-carrinho.webp" alt="Carrinho com resumo do pedido e finalização no WhatsApp">
+            <img loading="lazy" decoding="async" data-src="img/aroma-09-parceiros.webp" alt="Parceiros e depoimentos de clientes verificados">
+            <img loading="lazy" decoding="async" data-src="img/aroma-10-depoimento-form.webp" alt="Formulário Conte sua experiência">
+            <img loading="lazy" decoding="async" data-src="img/aroma-11-localizacao.webp" alt="Localização da loja no mapa">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">E-commerce & Varejo</span>
+          <h3 class="project-card__title">Aroma Adega — Catálogo Digital</h3>
+          <p class="project-card__desc">A home já direciona para a venda: botão "Ver Catálogo", prova social com avaliação por estrelas e "+500 clientes curtiram e deixaram depoimento", localização da adega em Piracicaba-SP, compartilhamento da página e compra direto pelo WhatsApp — o cliente não fica perdido navegando, é guiado à decisão já na primeira tela. A mesma lógica de confiança se repete no catálogo (depoimentos, selo "Cliente Verificado", estoque e parcelamento) e no link direto para o mapa com a rota até a loja.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>JavaScript</li><li>Bootstrap</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecommerce ia">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/aromasite-01-hero.webp" alt="Hero com +500 clientes satisfeitos e localização em Piracicaba-SP">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-02-destaques.webp" alt="Destaques da Adega, Tea House e Cafeteria">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-03-loja.webp" alt="Loja com filtros, vistos recentemente e avaliação por estrelas">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-04-detalhe.webp" alt="Detalhe do produto com estoque e produtos similares">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-05-lista-desejos.webp" alt="Lista de desejos">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-06-carrinho.webp" alt="Carrinho com resumo do pedido">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-07-pagamento.webp" alt="Checkout passo 1: forma de pagamento">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-08-confirmacao.webp" alt="Checkout passo 2: confirmação do pedido">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-09-entrega.webp" alt="Checkout passo 3: acompanhamento da entrega">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-10-historico.webp" alt="Histórico de pedidos">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-11-cadastro.webp" alt="Cadastro com cashback por compra">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-12-eventos.webp" alt="Eventos de degustação e workshops">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-13-depoimentos.webp" alt="Depoimentos reais em carrossel com curtidas">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-14-parceiros.webp" alt="Rodapé com redes sociais, institucional e formas de pagamento aceitas">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-15-mapa.webp" alt="Localização no mapa">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-16-amanda1.webp" alt="Conversa com a assistente virtual Amanda: cliente pedindo sugestão de presente">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-17-amanda2.webp" alt="Cliente detalhando preferências de vinho e orçamento para a Amanda">
+            <img loading="lazy" decoding="async" data-src="img/aromasite-18-amanda3.webp" alt="Cliente perguntando à Amanda sobre um aperitivo para acompanhar o vinho">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">E-commerce & Varejo · IA</span>
+          <h3 class="project-card__title">AROMA — Loja Virtual & Site Institucional</h3>
+          <p class="project-card__desc">Num negócio sem loja física na tela, a confiança não vem só da marca — vem de ver outras pessoas satisfeitas: "+500 Clientes Satisfeitos" já na home, depoimentos reais em carrossel (nome, avatar, estrelas) com curtidas, e indicador de estoque por variante substituem o balcão físico. Visitantes viram canal de divulgação ao compartilhar produtos, e cada depoimento gera conteúdo novo sem custo de produção. Diferencial: a agente de vendas por IA ("Amanda") sonda a preferência da cliente e sugere cross-sell antes de fechar o pedido — atendimento consultivo automatizado, não só um catálogo. Arquitetura 100% estática por escolha, não limitação: sem framework nem backend, <code>localStorage</code> como "banco de dados" (zero custo de servidor) e checkout finalizado no WhatsApp, canal onde o negócio já atende.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>JavaScript</li><li>IA (agente de vendas)</li><li>localStorage</li><li>Checkout via WhatsApp</li><li>Event Delegation</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ecommerce">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/quitanda-01-hero-menu.webp" alt="Menu de navegação e carrossel de banners promocionais">
+            <img loading="lazy" decoding="async" data-src="img/quitanda-02-busca-ordenacao.webp" alt="Busca, ordenação por nome/preço e paginação">
+            <img loading="lazy" decoding="async" data-src="img/quitanda-03-catalogo-todos.webp" alt="Catálogo completo com os 12 produtos e os três estados de estoque">
+            <img loading="lazy" decoding="async" data-src="img/quitanda-04-estados-estoque.webp" alt="Detalhe dos estados de estoque: em estoque, esgotado e reabastecendo">
+            <img loading="lazy" decoding="async" data-src="img/quitanda-05-rodape.webp" alt="Rodapé institucional com CNPJ, endereço e links legais">
+            <img loading="lazy" decoding="async" data-src="img/quitanda-06-menu-mobile.webp" alt="Menu de navegação responsivo aberto em mobile">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">E-commerce & Varejo</span>
+          <h3 class="project-card__title">Quitanda Online</h3>
+          <p class="project-card__desc">Wireframe navegável de e-commerce de hortifruti — catálogo com 12 produtos, busca, ordenação e paginação, controle visual de estoque por safra (em estoque, esgotado, reabastecendo) e carrinho. Rodapé institucional fixo (CNPJ, políticas, contato) resolvido com três spacers calculados por breakpoint do Bootstrap, evitando que o conteúdo fique escondido atrás dele sem depender de JavaScript pra medir altura em runtime. Protótipo front-end puro, pensado para validar a experiência de compra com stakeholders antes de investir em back-end.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>HTML5/CSS3</li><li>Bootstrap 5</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ia">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/lookbook-01-clima.webp" alt="Previsão do tempo com sugestão de roupa por IA">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-02-hero.webp" alt="Hero do Lookbook por destino — Itália">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-03-destinos.webp" alt="Página de Destinos com filtros por região, época, peça e ocasião">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-04-look-detalhe.webp" alt="Detalhe de um look com peça, cupom e link de compra">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-05-curadoria.webp" alt="Outras peças da loja selecionadas para o destino">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-06-parceiros.webp" alt="Stories de parceiros no Instagram">
+            <img loading="lazy" decoding="async" data-src="img/lookbook-07-outros-destinos.webp" alt="Seção de outros destinos para continuar explorando">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">IA & Produto</span>
+          <h3 class="project-card__title">Lookbook — Previsão do Tempo + Guia de Looks + Viagens</h3>
+          <p class="project-card__desc">Previsão do tempo traduzida em sugestão de roupa por IA ("o que eu visto hoje?") e um guia com <strong>indicação de destinos de viagem</strong> (Itália, Espanha, Turquia, Brasil) — peça, cupom, link de compra e pontos turísticos próximos por geolocalização ("o que eu levo na mala?" e "o que visitar?"). Favoritos e compartilhamento geram motivo de retorno antes da viagem, e um painel admin cadastra destino, look e cupom sem tocar em código — base pronta para monetizar por afiliação e assinatura.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>JavaScript</li><li>Groq AI</li><li>OpenWeatherMap</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="empresas">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/gestaoti-03-esteira-valor.webp" alt="Painel de demandas com KPIs e tarefas abertas por prioridade">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-02-quadro-itsm.webp" alt="Quadro visual de demandas (VTB) por fase da cadeia de valor">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-04-nova-demanda.webp" alt="Formulário de abertura de nova demanda">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-06-projetos-sprints.webp" alt="Projetos e sprints com burndown, KPIs e carga de trabalho da equipe">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-07-progresso.webp" alt="Acompanhamento de progresso">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-08-indicadores.webp" alt="Indicadores de demandas e projetos com impacto planejado x real">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-09-indicadores-incidentes.webp" alt="Indicadores de incidentes e carga por equipe">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-10-cmdb.webp" alt="CMDB com sistemas, KeyUser e responsável técnico">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-11-aprovadores.webp" alt="Aprovadores por alçada financeira">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-12-niveis-atendimento.webp" alt="Central de serviço N1 com SLA planejado x real">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-13-central-servico.webp" alt="Fila de tickets e volume de demandas por tipo">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-01-painel-demandas.webp" alt="Portal do colaborador com trilhas de aprendizado">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-15-treinamentos.webp" alt="Meus cursos e trilhas de treinamento">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-14-suporte.webp" alt="Formulário de suporte ao RH">
+            <img loading="lazy" decoding="async" data-src="img/gestaoti-16-agendamentos-manutencao.webp" alt="Agendamento automático de janela de manutenção, com SLA vencido detectado sozinho pelo servidor">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Empresas & Gestão</span>
+          <h3 class="project-card__title">Venustech — Plataforma de Gestão de Demandas e Projetos de TI</h3>
+          <p class="project-card__desc">Esteira ITSM completa — da abertura da demanda ao encerramento do projeto — com motor de regras orientado a dados: o fluxo de etapas (Backlog → Prospecção → Concepção → Em aprovação → Aprovado → Execução) e as tarefas de cada fase vêm de uma tabela, não de condicionais no código, então mudar o comportamento de um tipo de demanda é editar dado, não reescrever lógica. Indicadores inspirados em GRC/ITBM cobram que todo projeto registre o impacto real medido após a entrega, não só o planejado — a evidência que justifica investimento em TI para a diretoria. Agendamento automático de janelas de manutenção por sistema (CMDB): a janela abre sozinha quando a hora chega e, se não for concluída dentro do SLA prometido, o próprio servidor marca SLA vencido — sem ninguém precisar notar e sinalizar o atraso manualmente. Aprovadores por alçada financeira, CMDB com responsável técnico e de negócio por sistema, e projetos/sprints com burndown e KPIs completam a governança.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Node.js</li><li>Express</li><li>SQLite</li><li>Motor de Regras</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="empresas">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/ugc-01-hero.webp" alt="Hero do portfólio com nome, tagline e foto de perfil">
+            <img loading="lazy" decoding="async" data-src="img/ugc-02-sobre.webp" alt="Seção Sobre com foto, bio e principais credenciais">
+            <img loading="lazy" decoding="async" data-src="img/ugc-03-marcas.webp" alt="Faixa com mais de 300 marcas já atendidas">
+            <img loading="lazy" decoding="async" data-src="img/ugc-04-frentes-atuacao.webp" alt="Frentes de atuação: UGC, publicidade, clips, TikTok Shop e coordenação de creators">
+            <img loading="lazy" decoding="async" data-src="img/ugc-05-destaques.webp" alt="Conteúdos em destaque com miniaturas reais e métricas de views e likes">
+            <img loading="lazy" decoding="async" data-src="img/ugc-06-portfolio-filtro.webp" alt="Cabeçalho do portfólio com foto de apresentação e grade de conteúdos por categoria">
+            <img loading="lazy" decoding="async" data-src="img/ugc-06b-moda.webp" alt="Grade de conteúdos filtrada por Moda e Acessórios">
+            <img loading="lazy" decoding="async" data-src="img/ugc-06c-skincare.webp" alt="Grade de conteúdos filtrada por Skincare e Maquiagem">
+            <img loading="lazy" decoding="async" data-src="img/ugc-07-processo-criativo.webp" alt="Processo criativo em 8 etapas, da análise à entrega">
+            <img loading="lazy" decoding="async" data-src="img/ugc-08-metricas.webp" alt="Painel de métricas com contagem animada e distribuição de audiência">
+            <img loading="lazy" decoding="async" data-src="img/ugc-09-feedbacks.webp" alt="Depoimentos reais de marcas parceiras">
+            <img loading="lazy" decoding="async" data-src="img/ugc-10-proposta.webp" alt="Formulário de solicitação de proposta">
+            <img loading="lazy" decoding="async" data-src="img/ugc-11-admin.webp" alt="Painel administrativo com CRUD de projetos, depoimentos e propostas recebidas">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Empresas & Gestão</span>
+          <h3 class="project-card__title">Portfolio UGC — Site para Criadora de Conteúdo</h3>
+          <p class="project-card__desc">Portfólio comercial para criadora de conteúdo UGC, com backend Node.js + Express + SQLite (via sql.js, WebAssembly puro — sem dependência de compilação nativa, então <code>npm install</code> funciona em qualquer máquina sem Visual Studio Build Tools). Grade de conteúdos filtrável por categoria, vitrine de destaques, painel de métricas de audiência com contagem animada, carrossel de depoimentos reais e formulário de proposta que grava o lead no banco com status (novo, em contato, fechado). Painel administrativo com autenticação por chave e CRUD completo de projetos, depoimentos e propostas — toda alteração feita ali reflete direto no site público, sem editar código.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Node.js</li><li>Express</li><li>SQLite (sql.js)</li><li>CRUD</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="logistica">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/logistica-01-dashboard.webp" alt="Dashboard executivo com KPIs de frota, violações e estoque">
+            <img loading="lazy" decoding="async" data-src="img/logistica-02-veiculos.webp" alt="Cadastro e listagem de veículos">
+            <img loading="lazy" decoding="async" data-src="img/logistica-03-motoristas.webp" alt="Cadastro e listagem de motoristas">
+            <img loading="lazy" decoding="async" data-src="img/logistica-04-transportadoras.webp" alt="Cadastro de transportadoras parceiras">
+            <img loading="lazy" decoding="async" data-src="img/logistica-05-rotas.webp" alt="Rotas e áreas de atuação">
+            <img loading="lazy" decoding="async" data-src="img/logistica-06-viagens.webp" alt="Monitoramento de viagens em andamento">
+            <img loading="lazy" decoding="async" data-src="img/logistica-07-violacoes.webp" alt="Violações de condução com tratativa e SLA por gravidade">
+            <img loading="lazy" decoding="async" data-src="img/logistica-08-eventos-ssma.webp" alt="Eventos SSMA (OPI, IA, IQA)">
+            <img loading="lazy" decoding="async" data-src="img/logistica-09-abastecimento.webp" alt="Estoque e cadência por terminal (Tríade LOL/AOL/UOL)">
+            <img loading="lazy" decoding="async" data-src="img/logistica-10-contratacoes.webp" alt="Parâmetros de frete por transportadora">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Logística & Operações</span>
+          <h3 class="project-card__title">Sistema de Logística & SSMA</h3>
+          <p class="project-card__desc">Plataforma de gestão de frota, viagens e SSMA (segurança, saúde e meio ambiente) inspirada no MyDenox — sistema de gestão e monitoramento inteligente da Denox, plataforma integrada de automação, controle de acesso, segurança e monitoramento. Regras de negócio validadas no servidor, não só na tela: viagem só é criada com veículo e motorista, exclusão de cadastro em uso é bloqueada (transportadora com veículos, veículo com viagens/violações), e a tratativa de violações de condução roda como máquina de estados (Pendente → Em Revisão → Aprovado/Recusado). Dados fictícios — projeto de portfólio, sem informações reais de clientes ou operações, em conformidade com regras de segurança de dados.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Next.js</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>Máquina de Estados</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="agro">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/agrotanque-01-dashboard.webp" alt="Dashboard com litros abastecidos, pendências de liberação e estoque das bombas">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-02-abastecimentos.webp" alt="Listagem de abastecimentos com status Solicitado, Liberado, Concluído e Recusado">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-03-novo-abastecimento.webp" alt="Formulário de registro: operador, veículo, bomba e litros">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-04-liberar.webp" alt="Ações de liberar e recusar um abastecimento solicitado">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-05-operadores.webp" alt="Cadastro de operadores autorizados, com crachá único">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-06-veiculos.webp" alt="Cadastro de veículos e máquinas com capacidade de tanque">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-07-bombas.webp" alt="Estoque de combustível por bomba, com alerta de nível baixo">
+            <img loading="lazy" decoding="async" data-src="img/agrotanque-08-agendamentos.webp" alt="Agendamento automático de abastecimento futuro, com status Agendado e Executado">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Agronegócio</span>
+          <h3 class="project-card__title">AgroTanque — Controle de Abastecimento de Frota Rural</h3>
+          <p class="project-card__desc">Backend Node.js + Express que modela o abastecimento de frota rural (tratores, colheitadeiras, pulverizadores, caminhões) como um processo controlado em 4 passos, cada um validado no servidor: identificação do operador, vinculação ao veículo, registro do abastecimento e liberação controlada — que confere o estoque da bomba e debita os litros automaticamente, recusando a liberação se não houver combustível suficiente. Também é possível agendar o abastecimento de um veículo para um horário futuro: quando a hora chega, o próprio servidor cria a solicitação sozinho, sem precisar de ninguém clicando num botão naquele instante. Dashboard com litros abastecidos, pendências de liberação e ranking de consumo por veículo dá a rastreabilidade que normalmente se perde em planilha ou controle verbal no pátio.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Node.js</li><li>Express</li><li>Máquina de Estados</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="agro">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/pesacampo-01-checkin.webp" alt="Totem de check-in de autoatendimento com ticket de rastreio gerado">
+            <img loading="lazy" decoding="async" data-src="img/pesacampo-02-agendamentos.webp" alt="Agendamento automático de horário de chegada na balança, com slots preenchidos sozinhos">
+            <img loading="lazy" decoding="async" data-src="img/pesacampo-03-movimentacoes.webp" alt="Movimentações em diferentes passos do ciclo de pesagem: bruta, descarga e tara">
+            <img loading="lazy" decoding="async" data-src="img/pesacampo-04-veiculos.webp" alt="Cadastro de veículos aptos a fazer check-in na balança">
+            <img loading="lazy" decoding="async" data-src="img/pesacampo-05-pontos-descarga.webp" alt="Cadastro de pontos de descarga">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Agronegócio</span>
+          <h3 class="project-card__title">PesaCampo — Check-in e Pesagem Automatizada</h3>
+          <p class="project-card__desc">Sistema de autoatendimento e controle de pesagem para uma balança rural: o motorista faz check-in num totem e o ciclo de pesagem roda como máquina de estados validada no servidor — pesagem bruta → registro de descarga → pesagem tara, com o peso líquido calculado no fim, e ~25% dos check-ins sorteados no servidor (nunca no cliente) para coleta de amostra. Agendamento automático de horário de chegada: a transportadora pede um horário e o sistema encaixa sozinho no primeiro slot livre do expediente (janelas de 20 min, até 2 veículos por slot), e o check-in do dia confirma automaticamente o agendamento correspondente — sem fila de veículo sem hora marcada.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Node.js</li><li>Express</li><li>Máquina de Estados</li><li>Agendamento Automático</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="saude">
+        <div class="project-card__image">
+          <div class="project-card__slides" data-carousel>
+            <img loading="lazy" decoding="async" src="img/gestaosaude-01-boas-vindas.webp" alt="Tela de boas-vindas com equipe de saúde">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-02-home-busca.webp" alt="Busca de unidades de saúde por tipo e especialidade">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-03-mapa.webp" alt="Mapa com unidades de saúde de Piracicaba-SP agrupadas por região">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-04-login.webp" alt="Login e cadastro separados por tipo de usuário">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-05-portal-paciente.webp" alt="Portal do Paciente">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-06-portal-profissional.webp" alt="Portal Profissional de Saúde">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-07-medicamentos.webp" alt="Controle de prescrições e horários de medicamentos">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-08-acessibilidade.webp" alt="Painel de acessibilidade: alto contraste, fonte e espaçamento">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-09-cuidados-mulher.webp" alt="Página de Cuidados da Mulher e Rede Cegonha">
+            <img loading="lazy" decoding="async" data-src="img/gestaosaude-10-descarte-medicamentos.webp" alt="Pontos de descarte seguro de medicamento em Piracicaba-SP">
+          </div>
+          <button type="button" class="project-card__nav project-card__nav--prev" aria-label="Imagem anterior">‹</button>
+          <button type="button" class="project-card__nav project-card__nav--next" aria-label="Próxima imagem">›</button>
+          <div class="project-card__dots"></div>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__tag">Saúde Pública</span>
+          <h3 class="project-card__title">Gestão Saúde — Portal de Saúde</h3>
+          <p class="project-card__desc">Projeto construído com base nas regras de negócio reais da saúde pública municipal — a Rede Cegonha, o fluxo de descarte seguro de medicamento e a classificação por tipo de unidade (UBS, UPA, CAPS, farmácias, hospitais) serviram de inspiração direta. Portal de saúde pública com mapa de 131 unidades reais de Piracicaba-SP georreferenciadas e agrupadas por tipo, Portal do Paciente e Portal Profissional com login separado por perfil, e painel de acessibilidade (alto contraste, escala de fonte, espaçamento de letras) persistente entre as páginas.</p>
+          <ul class="tag-list tag-list--mono">
+            <li>Node.js</li><li>Express</li><li>SQLite</li><li>Leaflet</li><li>Acessibilidade</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Ver projeto →</a>
+            <a href="#" class="link-arrow">Código →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section--alt" id="skills">
+    <h2 class="section__title">Tecnologias & Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="skill-group__title">Frontend</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-chip__icon">🎨</span>HTML5, CSS3, SASS</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>JavaScript</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>Bootstrap</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🎨</span>Figma</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Backend</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>Node.js</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>Express</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>PostgreSQL</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>MySQL</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>Python</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🤖</span>Prompt Engineering / IA</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Domínios de Negócio</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-chip__icon">🚚</span>Logística & Mobilidade</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🌱</span>Agronegócio / Agricultura de Precisão</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🏥</span>Saúde Pública (SUS / DATASUS)</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🗳️</span>Setor Eleitoral & Governo (TRE-SP)</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🧪</span>QA de Hardware e Software</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🔒</span>LGPD & Governança de Dados</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🔒</span>Segurança, Compliance & Identidade (Microsoft SC-900)</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Ferramentas</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-chip__icon">🚀</span>Git</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🎨</span>WordPress</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>ServiceNow (ITSM)</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>SAP / ERP</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>DATASUS</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>Power BI</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>Metodologias Ágeis Scrum / Squad</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>Interpretação de Regras de Negócio</li>
+          <li class="skill-chip"><span class="skill-chip__icon">📝</span>Requisitos, Testes e Alinhamento de Entregas</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Soft Skills</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-chip__icon">🧠</span>Aprendizado Contínuo</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🎯</span>Raciocínio Lógico sob Pressão</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🤝</span>Trabalho em Equipe</li>
+          <li class="skill-chip"><span class="skill-chip__icon">💬</span>Comunicação Assertiva</li>
+          <li class="skill-chip"><span class="skill-chip__icon">👥</span>Liderança & Gestão de Pessoas</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🎓</span>Mentoria</li>
+          <li class="skill-chip"><span class="skill-chip__icon">🔍</span>Atenção a Detalhes</li>
+          <li class="skill-chip"><span class="skill-chip__icon">💗</span>Empatia</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUALIFICAÇÕES ================= -->
+  <section class="section" id="qualifications">
+    <h2 class="section__title">Minhas Qualificações</h2>
+    <p class="section__subtitle">Minha jornada educacional e profissional na área de tecnologia</p>
+
+    <div class="quali-tabs" role="tablist">
+      <button class="quali-tab is-active" data-tab="education" role="tab" aria-selected="true">
+        <span class="quali-tab__icon">🎓</span>Educação
+      </button>
+      <button class="quali-tab" data-tab="experience" role="tab" aria-selected="false">
+        <span class="quali-tab__icon">💼</span>Experiência
+      </button>
+      <button class="quali-tab" data-tab="courses" role="tab" aria-selected="false">
+        <span class="quali-tab__icon">📜</span>Cursos & Certificados
+      </button>
+    </div>
+
+    <!-- Painel: Educação -->
+    <div class="quali-panel is-active" data-panel="education">
+      <h3 class="quali-panel__title"><span class="quali-panel__icon">🏅</span>Formação Acadêmica</h3>
+
+      <div class="quali-grid">
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--progress">✦</span>
+          <span class="quali-card__icon">🎓</span>
+          <h4 class="quali-card__title">Desenvolvimento Web</h4>
+          <p class="quali-card__place">Instituto Hardware BR</p>
+          <p class="quali-card__meta">📅 2026 — 2027</p>
+          <p class="quali-card__meta">📍 Modalidade (Remoto/Presencial)</p>
+          <p class="quali-card__desc">Lógica de Programação com JavaScript, JavaScript e Orientação a Objetos, HTML + CSS/SASS, Web Services (Client) e noções de UI/UX.</p>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--progress">✦</span>
+          <span class="quali-card__icon">🎓</span>
+          <h4 class="quali-card__title">Gestão de Projetos e Empreendedorismo</h4>
+          <p class="quali-card__place">Instituto Hardware BR</p>
+          <p class="quali-card__meta">📅 2024 — 2024</p>
+          <p class="quali-card__meta">📍 Modalidade (Remoto/Presencial)</p>
+          <p class="quali-card__desc">
+          1. Gestão de Projetos de Tecnologia
+
+          Ciclo de Vida: Planejamento, execução, custos e prazos de sistemas.
+          Metodologias: Abordagens tradicionais e frameworks ágeis.
+          Viabilidade: Análise técnica, econômica e controle de qualidade.
+          <br>
+          2. Empreendedorismo e Inovação
+
+          Modelos de Negócio: Criação de startups com Business Model Canvas.
+          Propriedade Intelectual: Patentes e proteção de software.
+          Mercado: Marketing, finanças básicas e precificação.
+          <br>
+          3. Eficiência Organizacional
+
+          Cultura Lean: Eliminação de desperdícios em processos e projetos.
+          Melhoria Contínua: Ferramentas gerenciais para solução de problemas.
+
+          </p>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✦</span>
+          <span class="quali-card__icon">🎓</span>
+          <h4 class="quali-card__title">Engenharia da Computação</h4>
+          <p class="quali-card__place">Instituto Federal de Educação, Ciência e Tecnologia - Campus Piracicaba-SP</p>
+          <p class="quali-card__meta">📅 2019 — 2025</p>
+          <p class="quali-card__meta">📍 Piracicaba — SP</p>
+          <p class="quali-card__desc">Foco do Curso<br><br>Formação Integral: Une teoria, prática e responsabilidade socioambiental.<br>Multidisciplinaridade: Integra Ciência da Computação, Eletrônica e Matemática.<br> Área de Atuação: Foco em sistemas embarcados e automação industrial ou comercial.<br><br> Pilares Práticos<br><br> Carga Horária: Exige 3.510 horas no total para a graduação. <br>Projeto Final: Aplicação prática dos conhecimentos em um projeto real. <br>Incentivo Científico: Bolsas de ensino, monitoria e treinos para maratonas de programação.</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Painel: Experiência -->
+    <div class="quali-panel" data-panel="experience">
+      <h3 class="quali-panel__title"><span class="quali-panel__icon">💼</span>Experiência Profissional</h3>
+
+      <div class="quali-grid">
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✓ Concluído</span>
+          <span class="quali-card__icon">🗳️</span>
+          <h4 class="quali-card__title">Assistente Eleitoral | QA de Urnas Eletrônicas</h4>
+          <h3 class="quali-card__title">Função Eleitoral</h3>
+          <p class="quali-card__place">Tribunal Regional Eleitoral de São Paulo — Cartório Eleitoral de Piracicaba-SP</p>
+          <p class="quali-card__meta">📅 2026 (Eleições Gerais)</p>
+          <p class="quali-card__meta">📍 Piracicaba — SP</p>
+          <p class="quali-card__desc">
+            Atuei como Assistente Eleitoral junto ao Cartório Eleitoral de Piracicaba-SP (TRE-SP), dando suporte
+            técnico e operacional ao processo eleitoral, com foco em garantia de qualidade (QA) de hardware e
+            software das urnas eletrônicas e na gestão de equipes e processos em um ambiente de alta criticidade,
+            prazo rígido e zero margem para erro.
+            <br><br>
+            <strong><em>Vivência que reforçou disciplina com protocolos de teste, rastreabilidade e documentação
+            técnica sob prazo crítico — competências diretamente aplicáveis a QA e a processos de desenvolvimento
+            de software.</em></strong>
+            <br><br>
+            <em><b>Principais responsabilidades</b></em>
+            <br><br>
+            Testes de hardware e software das urnas eletrônicas (simulação de votação, verificação de integridade
+            antes e depois da eleição), seguindo protocolos e checklists oficiais do TSE;
+            Identificação, registro e escalonamento de não conformidades técnicas, com rastreabilidade de cada urna
+            testada;
+            Elaboração e consolidação de relatórios técnicos e operacionais para prestação de contas ao Cartório
+            Eleitoral e ao TRE-SP;
+            Supervisão de equipes de apoio no período eleitoral, organizando escalas, orientando procedimentos e
+            garantindo cumprimento de prazos legais;
+            Atendimento a mesários, eleitores e fiscais de partido, traduzindo procedimentos técnicos e normas
+            eleitorais em orientações claras;
+            Apoio à logística de distribuição e recolhimento de urnas, com controle de cadeia de custódia dos
+            equipamentos.
+            <br><br>
+            <em><b>Competências técnicas</b></em>
+            <br><br>
+            QA / testes de hardware e software · Protocolos e checklists TSE · Elaboração de relatórios técnicos ·
+            Gestão de equipes e processos sob prazo crítico · Atenção a detalhes e conformidade · Comunicação com
+            públicos diversos
+          </p>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✓ Concluído</span>
+          <span class="quali-card__icon">💼</span>
+          <h4 class="quali-card__title">Analista de Dados</h4>
+          <h3 class="quali-card__title">Estágio</h3>
+          <p class="quali-card__place">Diretoria Regional de Saúde</p>
+          <p class="quali-card__meta">📅 2025 — 2026</p>
+          <p class="quali-card__meta">📍 Piracicaba— SP</p>
+          <p class="quali-card__desc"><!--Descreva suas principais responsabilidades e conquistas nessa posição.-->
+        
+            Atuei na Diretoria Regional de Saúde (DRS), órgão estadual responsável pela articulação entre o Ministério da Saúde
+            e os municípios na coordenação da saúde pública regional. Prestei suporte técnico a colaboradores e operei sistemas
+            segmentados de saúde coletiva, lidando diretamente com desafios de usabilidade, integração e confiabilidade de dados
+            enfrentados pelos usuários finais.
+            <br><br>
+            <strong><em>Base prática sólida para atuação em desenvolvimento front-end, com foco em interfaces funcionais e centradas no
+            usuário.</em></strong>
+            <br><br>
+            <em><b>Principais responsabilidades</b></em>
+            <br><br>
+            Operação de sistemas do DATASUS identificando pontos de fricção no uso pelos municípios;
+            Extração e tratamento de dados em bases .dbf e consultas SQL, com consolidação e cruzamento de informações;
+            Higienização e padronização de dados: correção de duplicidades, inconsistências e informações faltantes;
+            Tradução de regras de negócio de saúde pública e privada (prontuário eletrônico, laboratório, farmácia e
+            distribuição) em requisitos de interface e experiência do usuário;
+            Elaboração de relatórios técnicos para apoio à tomada de decisão estratégica;
+            Suporte técnico de infraestrutura (rede, sistemas locais, e-mail institucional) e gestão de acessos e credenciais;
+            Apoio à governança da informação e conformidade com a LGPD no tratamento de dados sensíveis.
+            <br><br>
+            <em><b>Competências técnicas</b></em>
+            <br><br>
+            SQL · Manipulação de bases .dbf · Excel · Regras de negócio em sistemas de saúde · UX/Usabilidade em sistemas
+            públicos · Governança da informação · LGPD · Suporte técnico
+        
+            
+        
+          </p>
+        
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--progress">✦Concluído</span>
+          <span class="quali-card__icon">💼</span>
+          <h4 class="quali-card__title"> Analista de Sistema</h4>
+          <h3 class="quali-card__title"> Estágio</h3>
+          <p class="quali-card__place">Raízen</p>
+          <p class="quali-card__meta">📅 2024— 2025</p>
+          <p class="quali-card__meta">📍 Piracicaba— SP</p>
+          <p class="quali-card__desc"><!--Descreva suas principais responsabilidades e conquistas nessa posição.<br>-->
+        
+            Atuei na divisão EAB (Etanol, Açúcar e Bioenergia) da Raízen, atendendo às áreas de Agrícola, Indústria e SSMA, no
+            time de TI fazendo interface com times de negócio e fornecedores.
+            <br><br>
+
+            
+            <strong><em>Vivência que consolidou a transição para desenvolvimento de software: entendimento de como requisitos de negócio se traduzem
+            em soluções técnicas, com familiaridade prática no ciclo requisição-lógica-resposta que fundamenta o consumo e
+            desenvolvimento de APIs.</em></strong>
+            <br><br>
+            <em><b>Principais responsabilidades</b></em>
+            <br><br>
+            Gestão de demandas e projetos com metodologias ágeis e tradicionais (Scrum, Kanban, Lean, PMBOK, Waterfall);
+            Planejamento de descomissionamento de sistemas legados e implementação de novas soluções, definindo fluxos, SLAs e
+            protocolos de aprovação;
+            Gestão de demandas via ServiceNow: tickets, estimativa de tarefas e custos, change requests, homologação, testes e
+            go-live;
+            Governança operacional: definição de papéis (administradores, donos de processo, Key Users), reporte de
+            incidentes/bugs e capacitação de usuários;
+            Levantamento e documentação de requisitos junto a stakeholders, com apoio na escrita de casos de teste;
+            Aprendizado prático de APIs (requisição → lógica de negócio → resposta em JSON), aplicado a sistemas como PIMS,
+            SCPA, SCA e integrações com ERP;
+            Participação nos projetos de automação da Central de Entrada de Cana (CEC) e Faturamento, com regras de negócio em
+            totens integrados a ERP/SAP/PIMS;
+            Interface com controle orçamentário (CapEx/OpEx), cronogramas e priorização técnica de demandas.
+            <br><br>
+            <em><b>Competências técnicas</b></em>
+            <br><br>
+            APIs e integração de sistemas (JSON) · Lógica de negócio aplicada a software · ServiceNow/ITSM · Metodologias ágeis
+            (Scrum/Kanban) · Levantamento de requisitos · Governança e documentação técnica · Boas práticas de segurança · Visão
+            end-to-end de projetos
+            
+          </p>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✓ Concluído</span>
+          <span class="quali-card__icon">💼</span>
+          <h4 class="quali-card__title">Gestão de Projetos | Logística, SSMA & Mobilidade</h4>
+          <h3 class="quali-card__title">Estágio</h3>
+          <p class="quali-card__place">Raízen/Shell</p>
+          <p class="quali-card__meta">📅 2022 — 2023</p>
+          <p class="quali-card__meta">📍 Piracicaba— SP</p>
+          <p class="quali-card__desc"><!--Descreva suas principais responsabilidades e conquistas nessa posição.-->
+        
+            Atuei em projetos de transformação digital na logística primária de transporte de combustíveis, integrando sistemas
+            de SSMA, mobilidade, rastreabilidade, estoque e Supply Chain Management (Raízen/Shell), com foco em segurança no
+            transporte de produtos inflamáveis, precificação de frete e controle de distribuição e faturamento.
+            <br><br>
+
+            <strong><em>Vivência que reforçou a capacidade analítica na leitura de indicadores e o uso de dados para embasar decisões —
+            competências aplicáveis à construção de dashboards e ferramentas orientadas a dados no desenvolvimento de software.</em></strong>
+           
+            
+            <br><br>
+            <em><b>Principais responsabilidades</b></em>
+            <br><br>
+            Integração entre ERP de estoque de combustíveis, sistemas de logística, faturamento e SSMA, 
+            com envio via API dos dados de monitoramento (Denox) ao ERP/SAP para atualização automática de estoque, faturamento e emissão de CT-e/NF-e;
+            Monitoramento de segurança de pessoas e cargas no transporte de produtos altamente inflamáveis;
+            Acompanhamento de métricas de empresas de rastreamento e telemetria (Maxtrack, Sascar, Autotrac): precisão, tempo de
+            resposta e confiabilidade;
+            Apoio a processos de precificação de frete, distribuição e faturamento;
+            Transição para sistema de agendamento/autoatendimento nos terminais, com operação assistida e coleta de
+            feedback;
+            Análise de métricas operacionais: agendamento, no-show, reprocessamento, aderência e incidentes;
+            Otimização de processos via dados — política de no-show, gargalos no autoatendimento e ajustes de agendamento;
+            Relatórios semanais para lideranças (Supply Chain, Mobilidade, Trading) com KPIs e análises de picos de demanda.
+            <br><br>
+            <b><em>Competências técnicas</em></b>
+            <br><br>
+            Integração de sistemas ERP · SSMA em transporte de produtos perigosos · Precificação de frete e faturamento · Python
+            · Power BI · Análise de dados operacionais · KPIs e métricas de performance · Relatórios executivos
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Painel: Cursos & Certificados -->
+    <!-- Para adicionar um novo certificado, duplique um <article class="quali-card"> com nome exato do
+         curso, instituição/plataforma, data e carga horária. -->
+
+    <div class="quali-panel" data-panel="courses">
+      <h3 class="quali-panel__title"><span class="quali-panel__icon">📜</span>Cursos & Certificados</h3>
+
+      <div class="quali-grid">
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✓ Concluído</span>
+          <span class="quali-card__icon">🔒</span>
+          <h4 class="quali-card__title">Microsoft Security, Compliance, and Identity Fundamentals (SC-900)</h4>
+          <p class="quali-card__place">Ka Solution (Microsoft Partner Gold Learning)</p>
+          <p class="quali-card__meta">📅 22/03/2025</p>
+          <p class="quali-card__meta">📍 Online · 8 horas</p>
+          <p class="quali-card__desc">Fundamentos de segurança, compliance e gestão de identidade no ecossistema Microsoft — base para boas práticas de segurança e governança de dados aplicadas ao desenvolvimento de software.</p>
+          <a href="certificados/microsoft-sc900.pdf" target="_blank" class="link-arrow">Ver certificado →</a>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--done">✓ Concluído</span>
+          <span class="quali-card__icon">🎨</span>
+          <h4 class="quali-card__title">Figma na Prática: Crie seu Primeiro Protótipo do Zero Com IA</h4>
+          <p class="quali-card__place">EBAC — Escola Britânica de Artes Criativas & Tecnologia</p>
+          <p class="quali-card__meta">📅 08 e 09/09/2026</p>
+          <p class="quali-card__meta">📍 Online · 4 horas</p>
+          <p class="quali-card__desc">Workshop de prototipagem no Figma com apoio de IA, ministrado por Giovanni Sonnberger — prática direta de UI/UX aplicada à construção de interfaces.</p>
+          <a href="certificados/ebac-figma.pdf" target="_blank" class="link-arrow">Ver certificado →</a>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--progress">✦ Treino contínuo</span>
+          <span class="quali-card__icon">🧠</span>
+          <h4 class="quali-card__title">Maratona e Lógica de Programação</h4>
+          <p class="quali-card__place">BeeCrowd</p>
+          <p class="quali-card__meta">📅 Contínuo</p>
+          <p class="quali-card__meta">📍 Online</p>
+          <p class="quali-card__desc">Resolução de problemas, estruturas de dados e algoritmos — prática que apoiou a participação na Maratona de Programação IFSP (InterIF).</p>
+        </article>
+
+        <article class="quali-card">
+          <span class="quali-card__badge quali-card__badge--progress">✦ Em andamento</span>
+          <span class="quali-card__icon">🌐</span>
+          <h4 class="quali-card__title">Inglês</h4>
+          <p class="quali-card__place">Duolingo</p>
+          <p class="quali-card__meta">📅 Contínuo</p>
+          <p class="quali-card__meta">📍 Online</p>
+          <p class="quali-card__desc">Prática contínua de inglês para leitura técnica, documentação e comunicação internacional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG / REPERTÓRIO ================= -->
+  <section class="section" id="blog">
+    <h2 class="section__title">Livros, Filmes & Repertório</h2>
+    <p class="section__subtitle">Um espaço para registrar o que eu leio, assisto e penso — e como isso atravessa a forma como eu trabalho e programo.</p>
+
+    <!-- Prévia de 3 posts montada em script.js a partir de blog-posts.js (mesma fonte de dados do blog.html). -->
+    <div class="post-grid" id="homeBlogGrid"></div>
+
+    <div class="blog-preview-cta">
+      <a href="blog.html" class="btn btn--ghost">Ver blog completo →</a>
+    </div>
+  </section>
+
+  <!-- ================= CURIOSIDADES ================= -->
+  <section class="section section--alt" id="fun-facts">
+    <h2 class="section__title">Curiosidades sobre mim</h2>
+    <p class="section__subtitle">Um pouco mais sobre quem sou além do código</p>
+
+    <h3 class="funfacts__group-title">Hobbies</h3>
+    <div class="funfacts-grid">
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🎨</span>
+        <h4 class="funfact-card__title">Criativo(a) nas Horas Vagas</h4>
+        <p class="funfact-card__desc">Leio sobre Filosofia, Psicologia/Psicanálise, Moda, Negócios e Comportamento, e pratico inglês nas horas vagas. Curto jogos de memória e lógica, além de jogos de personalidade e autoconhecimento, como oráculos. Também pratico ilustração, arte e aromaterapia (saboaria e velas aromáticas) — nicho onde já empreendi.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🎨</span>
+        <h4 class="funfact-card__title">Moda</h4>
+        <p class="funfact-card__desc">Me interesso por moda e fashion tech — provadores virtuais, personalização por IA e e-commerces pensados para vender identidade, não só produto.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">☕</span>
+        <h4 class="funfact-card__title">Café</h4>
+        <p class="funfact-card__desc">Não começo o dia sem uma xícara — meu combustível para programar.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🤝</span>
+        <h4 class="funfact-card__title">Comunidades</h4>
+        <p class="funfact-card__desc">Participo do Dev Pira e sigo criadores como Karol Attekita, Giulia Bordignon e Rodolfo Mori para trocar experiências e acompanhar tendências tech.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🗳️</span>
+        <h4 class="funfact-card__title">Bastidores da Democracia</h4>
+        <p class="funfact-card__desc">Testei urnas eletrônicas em uma eleição e vi de perto o rigor técnico e os protocolos de QA por trás da democracia brasileira.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🐾</span>
+        <h4 class="funfact-card__title">Amante de Pets</h4>
+        <p class="funfact-card__desc">Tenho pet que é minha companhia durante as sessões de código em casa e nas rotinas de exercícios ao lar livre. Taz é um pet Atleta focado e disciplinado, que gosta de criar conteúdos para seu perfil no Instagram. Segue @pet.tazmania </p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🚴</span>
+        <h4 class="funfact-card__title">Ciclismo & Pular Corda</h4>
+        <p class="funfact-card__desc">Pedalo e pulo corda nas horas vagas — disciplina física e desconexão da tela, junto com o Taz.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🌿</span>
+        <h4 class="funfact-card__title">Cuidar de Plantas</h4>
+        <p class="funfact-card__desc">Cultivo plantas em casa — um hobby que exige paciência e constância, longe das telas.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🎵</span>
+        <h4 class="funfact-card__title">Música para Programar</h4>
+        <p class="funfact-card__desc">Tenho playlists específicas para cada momento de trabalho.</p>
+      </article>
+      <article class="funfact-card">
+        <span class="funfact-card__icon">🍽️</span>
+        <h4 class="funfact-card__title">Exploradora Gastronômica</h4>
+        <p class="funfact-card__desc">Adoro descobrir restaurantes novos e experimentar pratos e bebidas variadas — de confeitaria a vinhos e destilados.</p>
+      </article>
+    </div>
+
+    <div class="funfacts__top">
+      <div class="funfacts__story">
+      <h3 class="funfacts__group-title">Trajetória Profissional na Tecnologia</h3>
+        <!--<p>Conte aqui como sua trajetória na tecnologia começou: o que te motivou a entrar na área, seus primeiros passos e os desafios que enfrentou no início.</p>
+        <p>Fale sobre sua formação, os primeiros projetos que desenvolveu e como foi evoluindo profissionalmente até chegar onde está hoje.</p>
+        <p>Se participou de hackathons, competições ou projetos que marcaram sua trajetória, esse é o lugar para contar essas conquistas.</p>
+        <p>Termine com algo mais pessoal: seus hobbies e o que você gosta de fazer fora do código.</p>-->
+        
+        <p>Acredito no poder do aprendizado contínuo: cada mudança de rota na minha trajetória começou aprendendo
+        algo novo na prática, antes de qualquer sala de aula. Foi assim que cheguei à Engenharia da Computação —
+        não por vocação óbvia, mas através do empreendedorismo. Com a Aromaterapia Inaie, meu primeiro negócio,
+        precisei aprender sozinha a editar fotos de produto, criar conteúdo para redes sociais e montar um blog/loja
+        na Wix — meu primeiro contato real com e-commerce — além de manter um espaço no WordPress.
+        <br><br>Esse contato direto com as duas plataformas, somado ao desafio de separar as finanças pessoais das
+        do negócio, me deu minha primeira visão prática de gestão de produto: entender catálogo, canal de venda,
+        conteúdo e controle financeiro como partes de um mesmo sistema, não tarefas soltas. Foi essa mesma
+        necessidade que, já na faculdade, inspirou o desenvolvimento do Fature, meu primeiro aplicativo, hoje
+        disponível no GitHub — e o que me convenceu a seguir formalmente para a tecnologia.
+        <br><br>Dessa experiência, consegui entrar no mercado de trabalho e destacar essas vivências em estágios que
+        atravessaram setores bem diferentes entre si — logística e mobilidade, agronegócio, saúde pública e, mais
+        recentemente, o setor eleitoral —, aplicando na prática o mesmo raciocínio de produto e de negócio que
+        comecei a desenvolver ainda como empreendedora.
+        <br><br>Esse raciocínio continua vivo no meu <a href="#projects" class="link-arrow">portfólio</a>: catálogos
+        e lojas virtuais aplicam prova social, redução de fricção no checkout e gestão de
+        estoque para resolver problemas reais de varejo; sistemas de gestão recriam em código processos de ITSM,
+        governança e operação logística; e um produto com IA traduz dados em decisão — do clima à mala de viagem.
+        Cada um nasceu de uma pergunta de negócio concreta, não de uma tecnologia que eu só queria testar.
+        <br><br>Esse mesmo apetite por aprender me levou a treinar e competir na Maratona de Programação IFSP
+        (InterIF) e a atuar como mentora voluntária no Cursinho Pré-vestibular IF — experiências que reforçaram meu
+        raciocínio lógico sob pressão, trabalho em equipe e capacidade de explicar o que sei para quem está
+        aprendendo.
+        <br><br>Fora do código, essa mesma curiosidade e disciplina aparecem nos meus hobbies — alguns deles
+        abaixo.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="funfacts-carousel">
+      <div class="funfacts-carousel__track">
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/fature.webp" alt="Foto pessoal"></div>
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/inaie.webp" alt="Foto pessoal"></div>
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/lifeLearners.webp" alt="Foto pessoal"></div>
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/maratona.webp" alt="Foto sobre maratona"></div>
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/pessoal.webp" alt="Foto sobre networking"></div>
+        <div class="funfacts-carousel__card"><img loading="lazy" decoding="async" src="img/ivytrabalho.webp" alt="Foto de perfil"></div>
+        <!-- cópia das mesmas fotos para o loop ficar contínuo, sem salto -->
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/fature.webp" alt=""></div>
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/inaie.webp" alt=""></div>
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/lifeLearners.webp" alt="livro"></div>
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/maratona.webp" alt=""></div>
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/pessoal.webp" alt=""></div>
+        <div class="funfacts-carousel__card" aria-hidden="true"><img loading="lazy" decoding="async" src="img/ivytrabalho.webp" alt=""></div>
+      </div>
+    </div>
+
+    <blockquote class="quote-box">
+      <p>"Minha trajetória é a prova viva do que é defendido na filosofia 'Lifelong Learners': aprender a aprender é o que me manteve relevante em cada mudança de rota."</p>
+      <cite>— Ivone Antunes</cite>
+    </blockquote>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section--alt" id="contact">
+    <h2 class="section__title">Vamos conversar?</h2>
+    <p class="section__subtitle">Estou sempre aberto(a) a novos projetos e oportunidades.</p>
+
+    <div class="contact__grid">
+      <div class="contact__info">
+        <div class="contact__row">
+          <span class="contact__label">Email</span>
+          <a href="mailto:seuemail@exemplo.com" class="contact__value">antunesivone436@gmail.com</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">WhatsApp</span>
+          <a href="https://wa.me/5519971383626?text=Ol%C3%A1%2C%20Ivone!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" class="contact__value">(19) 97138-3626</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Centro</span>
+          <span class="contact__value">Piracicaba — SP</span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Redes</span>
+          <div class="contact__socials">
+            <a href="https://github.com/antunesivone" target="_blank" class="social-link" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.73.8 1.17 1.83 1.17 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ivone-antunes-8318b2289/" target="_blank" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.48V23H.24V8.25ZM8.24 8.25h4.3v2.01h.06c.6-1.14 2.06-2.34 4.24-2.34 4.53 0 5.37 2.98 5.37 6.86V23h-4.48v-6.35c0-1.51-.03-3.46-2.11-3.46-2.11 0-2.43 1.65-2.43 3.35V23H8.24V8.25Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/antunesivonee/" target="_blank" class="social-link" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38-.66.67-1.07 1.34-1.38 2.13-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.41a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@IvoneAntunes-f1v" target="_blank" class="social-link" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.44 3.5 12 3.5 12 3.5s-7.44 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.56 20.5 12 20.5 12 20.5s7.44 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap">
+        <form class="contact__form" id="contactForm">
+          <label class="field">
+            <span>Nome</span>
+            <input type="text" name="name" required placeholder="Seu nome">
+          </label>
+          <label class="field">
+            <span>Detalhes do projeto</span>
+            <textarea name="message" rows="4" required placeholder="Me conta um pouco sobre o que você precisa"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Enviar no WhatsApp</button>
+          <p class="field__note" id="formNote"></p>
+        </form>
+        <p class="contact__form-link">
+          <a href="#projects" class="link-arrow">Ou veja meu portfólio primeiro →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__brand">&lt;Portfólio Ivone Antunes/&gt;</p>
+    <p class="footer__text">Feito com café ☕ e algumas linhas de JavaScript.</p>
+    <p class="footer__copy">© <span id="year"></span> Desenvolvido por Ivone Antunes| venustech | Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="blog-posts.js"></script>
+<script src="blog-render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

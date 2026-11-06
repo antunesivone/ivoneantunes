@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="postPageTitle">Post — Ivone Antunes</title>
+<meta name="description" id="postPageDescription" content="Livros, filmes e artigos de Ivone Antunes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html#top" class="nav__brand">
+      <span class="nav__brand-bracket">&lt;</span>Ivone Antunes<span class="nav__brand-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#about" class="nav__link"><span class="nav__num"></span>Sobre</a>
+      <a href="index.html#services" class="nav__link"><span class="nav__num"></span>Serviços</a>
+      <a href="index.html#projects" class="nav__link"><span class="nav__num"></span>Portfólio</a>
+      <a href="index.html#skills" class="nav__link"><span class="nav__num"></span>Skills</a>
+      <a href="index.html#qualifications" class="nav__link"><span class="nav__num"></span>Qualificações</a>
+      <a href="blog.html" class="nav__link is-active"><span class="nav__num"></span>Blog</a>
+      <a href="index.html#fun-facts" class="nav__link"><span class="nav__num"></span>Curiosidades</a>
+      <a href="index.html#contact" class="nav__link nav__link--cta">Contato</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="section blog-page">
+    <a href="blog.html" class="blog-back">← Voltar ao blog</a>
+    <div id="postContent"><!-- preenchido por post.js a partir de BLOG_POSTS --></div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__brand">&lt;Portfólio Ivone Antunes/&gt;</p>
+    <p class="footer__text">Feito com café ☕ e algumas linhas de JavaScript.</p>
+    <p class="footer__copy">© <span id="year"></span> Desenvolvido por Ivone Antunes| venustech | Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="blog-posts.js"></script>
+<script src="blog-render.js"></script>
+<script src="post.js"></script>
+</body>
+</html>
