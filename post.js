@@ -68,7 +68,7 @@ if (!post) {
     </div>
     <h1 class="post-detail__title">${post.titulo}</h1>
     <p class="post-detail__meta">${post.meta}</p>
-    <p class="post-detail__text">${post.texto}</p>
+    <div class="post-detail__text">${post.texto}</div>
     <button type="button" class="post-card__icon post-detail__share" data-share="${post.slug}" title="Compartilhar" aria-label="Compartilhar post">🔗</button>
   `;
 

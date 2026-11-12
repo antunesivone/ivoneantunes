@@ -878,6 +878,34 @@ p { margin: 0; }
 .post-detail__text { color: var(--text-muted); line-height: 1.85; font-size: 1.02rem; max-width: 70ch; margin-bottom: 2.2rem; }
 .post-detail__share { cursor: pointer; }
 
+/* Conteúdo rico (artigos/tutoriais longos) dentro de .post-detail__text */
+.post-detail__text h2 { font-family: var(--font-display); color: var(--text); font-size: 1.35rem; font-weight: 600; margin: 2.2rem 0 0.9rem; }
+.post-detail__text h2:first-child { margin-top: 0; }
+.post-detail__text h3 { font-family: var(--font-display); color: var(--text); font-size: 1.1rem; font-weight: 600; margin: 1.6rem 0 0.7rem; }
+.post-detail__text p { margin: 0 0 1.1rem; }
+.post-detail__text ul, .post-detail__text ol { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+.post-detail__text li { margin-bottom: 0.5rem; }
+.post-detail__text strong { color: var(--text); }
+.post-detail__text a { color: var(--accent); }
+.post-detail__text a:hover { text-decoration: underline; }
+.post-detail__text code { font-family: var(--font-mono); font-size: 0.88em; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0.1em 0.4em; color: var(--accent-2); }
+.post-detail__text pre { font-family: var(--font-mono); font-size: 0.86rem; line-height: 1.6; background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; overflow-x: auto; margin: 0 0 1.4rem; }
+.post-detail__text pre code { background: none; border: none; padding: 0; color: var(--text-muted); }
+.post-detail__text blockquote { border-left: 2px solid var(--accent); background: var(--surface); padding: 0.9rem 1.2rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 0 0 1.4rem; color: var(--text-muted); font-style: italic; }
+.post-detail__text figure { margin: 0 0 1.6rem; }
+.post-detail__text figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border); display: block; }
+.post-detail__text figcaption { font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-top: 0.6rem; }
+.post-detail__text .post-quadro { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); margin: 0 0 1.4rem; overflow: hidden; }
+.post-detail__text .post-quadro__title { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.02em; color: var(--accent-2); background: var(--bg-alt); padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); }
+.post-detail__text .post-quadro__body { padding: 1rem 1.2rem; font-style: italic; }
+.post-detail__text .post-quadro__source { font-size: 0.78rem; color: var(--text-muted); padding: 0 1.2rem 0.9rem; }
+.post-detail__text table { width: 100%; border-collapse: collapse; margin: 0 0 1.4rem; font-size: 0.92rem; }
+.post-detail__text th, .post-detail__text td { border: 1px solid var(--border); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
+.post-detail__text th { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); background: var(--surface); }
+.post-detail__text .post-refs { list-style: none; padding: 0; margin: 0; }
+.post-detail__text .post-refs li { margin-bottom: 1.1rem; padding-left: 0; }
+.post-detail__text .post-refs .post-ref__note { display: block; font-size: 0.85rem; font-style: italic; color: var(--text-muted); margin-top: 0.3rem; }
+
 /* ==========================================================
    CURIOSIDADES
    ========================================================== */
