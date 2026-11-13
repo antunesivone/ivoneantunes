@@ -1,25 +1,5 @@
-// ==========================================================
-// ANO NO FOOTER
-// ==========================================================
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// ==========================================================
-// MENU MOBILE
-// ==========================================================
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
-
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", isOpen);
-});
-
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
+// Ano no footer, menu mobile e scroll do header/back-to-top agora vivem em
+// common.js (carregado antes deste arquivo em index.html).
 
 // ==========================================================
 // EFEITO "DIGITANDO" NO TERMINAL DO HERO
@@ -85,7 +65,7 @@ heroObserver.observe(document.getElementById("hero"));
 // ==========================================================
 const homeBlogGrid = document.getElementById("homeBlogGrid");
 if (homeBlogGrid) {
-  const SLUGS_PREVIA_HOME = ["qa-urnas-vs-qa-software", "titulo-do-livro", "agro-saude-logistica-requisitos"];
+  const SLUGS_PREVIA_HOME = ["qa-urnas-vs-qa-software", "como-falar-em-publico-dale-carnegie", "do-prompt-ao-prototipo-rumo"];
   const postsPrevia = SLUGS_PREVIA_HOME.map((slug) => BLOG_POSTS.find((p) => p.slug === slug)).filter(Boolean);
   homeBlogGrid.innerHTML = postsPrevia.map(criarCardPostHTML).join("");
   ligarBotoesCompartilhar(homeBlogGrid);
@@ -232,20 +212,18 @@ document.querySelectorAll(".project-card__slides[data-carousel]").forEach((slide
 });
 
 // ==========================================================
-// HEADER: sombra sutil ao rolar + botão voltar ao topo
+// CURIOSIDADES: pausa a animação infinita do carrossel quando a seção
+// não está visível (ela rodava o tempo todo, mesmo fora de tela).
 // ==========================================================
-const nav = document.getElementById("nav");
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  const scrolled = window.scrollY > 40;
-  nav.style.boxShadow = scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none";
-  backToTop.classList.toggle("is-visible", window.scrollY > 500);
-});
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+const funfactsCarousel = document.querySelector(".funfacts-carousel");
+if (funfactsCarousel) {
+  const funfactsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      funfactsCarousel.classList.toggle("is-paused", !entry.isIntersecting);
+    });
+  });
+  funfactsObserver.observe(funfactsCarousel);
+}
 
 // ==========================================================
 // FORMULÁRIO DE CONTATO — redireciona para o WhatsApp

@@ -1,41 +1,5 @@
-// ==========================================================
-// ANO NO FOOTER
-// ==========================================================
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// ==========================================================
-// MENU MOBILE
-// ==========================================================
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
-
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", isOpen);
-});
-
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-// ==========================================================
-// HEADER: sombra sutil ao rolar + botão voltar ao topo
-// ==========================================================
-const nav = document.getElementById("nav");
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  const scrolled = window.scrollY > 40;
-  nav.style.boxShadow = scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none";
-  backToTop.classList.toggle("is-visible", window.scrollY > 500);
-});
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+// Ano no footer, menu mobile e scroll do header/back-to-top agora vivem em
+// common.js (carregado antes deste arquivo em post.html).
 
 // ==========================================================
 // RENDERIZA O POST a partir do ?slug= na URL (BLOG_POSTS vem de blog-posts.js)
@@ -52,9 +16,35 @@ if (!post) {
     <a href="blog.html" class="btn btn--primary">Ver todos os posts →</a>
   `;
 } else {
-  document.title = `${post.titulo} — Ivone Antunes`;
-  document.getElementById("postPageTitle").textContent = `${post.titulo} — Ivone Antunes`;
+  const BASE_URL = "https://antunesivone.github.io/ivoneantunes/";
+  const postUrl = BASE_URL + "post.html?slug=" + encodeURIComponent(post.slug);
+  const postImage = BASE_URL + (post.cover || "img/eudev.webp");
+  const pageTitle = `${post.titulo} — Ivone Antunes`;
+
+  document.title = pageTitle;
+  document.getElementById("postPageTitle").textContent = pageTitle;
   document.getElementById("postPageDescription").setAttribute("content", post.resumo);
+  document.getElementById("postPageCanonical").setAttribute("href", postUrl);
+  document.getElementById("postPageOgTitle").setAttribute("content", pageTitle);
+  document.getElementById("postPageOgDescription").setAttribute("content", post.resumo);
+  document.getElementById("postPageOgUrl").setAttribute("content", postUrl);
+  document.getElementById("postPageOgImage").setAttribute("content", postImage);
+  document.getElementById("postPageTwitterTitle").setAttribute("content", pageTitle);
+  document.getElementById("postPageTwitterDescription").setAttribute("content", post.resumo);
+  document.getElementById("postPageTwitterImage").setAttribute("content", postImage);
+
+  const jsonLd = document.createElement("script");
+  jsonLd.type = "application/ld+json";
+  jsonLd.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.titulo,
+    description: post.resumo,
+    image: postImage,
+    url: postUrl,
+    author: { "@type": "Person", name: "Ivone Antunes", url: BASE_URL + "index.html" },
+  });
+  document.head.appendChild(jsonLd);
 
   const mediaInterna = post.cover
     ? `<img loading="lazy" decoding="async" src="${post.cover}" alt="${post.titulo}" class="post-detail__img">`
@@ -68,6 +58,7 @@ if (!post) {
     </div>
     <h1 class="post-detail__title">${post.titulo}</h1>
     <p class="post-detail__meta">${post.meta}</p>
+    ${criarAutorBylineHTML(post)}
     <div class="post-detail__text">${post.texto}</div>
     <button type="button" class="post-card__icon post-detail__share" data-share="${post.slug}" title="Compartilhar" aria-label="Compartilhar post">🔗</button>
   `;

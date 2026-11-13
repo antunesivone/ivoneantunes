@@ -1,37 +1,34 @@
-// ==========================================================
-// ANO NO FOOTER
-// ==========================================================
-document.getElementById("year").textContent = new Date().getFullYear();
+// Ano no footer, menu mobile e scroll do header/back-to-top agora vivem em
+// common.js (carregado antes deste arquivo em blog.html).
 
 // ==========================================================
-// MENU MOBILE
+// RENDERIZA DESTAQUES + LIVROS (lista) + ARTIGOS/FILMES (grid)
+// a partir de BLOG_POSTS (blog-posts.js)
 // ==========================================================
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+const SLUGS_DESTAQUES = [
+  "do-prompt-ao-prototipo-rumo",
+  "design-de-prompt-vs-engenharia-de-prompt",
+  "qa-urnas-vs-qa-software",
+];
+const postsDestaque = SLUGS_DESTAQUES.map((slug) => BLOG_POSTS.find((p) => p.slug === slug)).filter(Boolean);
+document.getElementById("blogDestaques").innerHTML = postsDestaque.map(criarDestaqueHTML).join("");
 
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", isOpen);
-});
+const livros = BLOG_POSTS.filter((p) => p.categoria === "livro");
+const outros = BLOG_POSTS.filter((p) => p.categoria !== "livro");
 
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-// ==========================================================
-// RENDERIZA OS CARDS A PARTIR DE BLOG_POSTS (blog-posts.js)
-// ==========================================================
+const blogLivros = document.getElementById("blogLivros");
 const blogGrid = document.getElementById("blogGrid");
-blogGrid.innerHTML = BLOG_POSTS.map(criarCardPostHTML).join("");
+blogLivros.innerHTML = livros.map(criarLivroRowHTML).join("");
+blogGrid.innerHTML = outros.map(criarCardPostHTML).join("");
+ligarBotoesCompartilhar(blogLivros);
 ligarBotoesCompartilhar(blogGrid);
 
 // ==========================================================
 // SCROLL REVEAL (fade + slide-up ao entrar na tela)
 // ==========================================================
-const revealTargets = document.querySelectorAll(".section > *:not(.section__eyebrow), .post-card");
+const revealTargets = document.querySelectorAll(
+  ".section > *:not(.section__eyebrow), .destaque-card, .book-row, .post-card"
+);
 revealTargets.forEach((el) => el.classList.add("reveal"));
 
 const revealObserver = new IntersectionObserver(
@@ -49,9 +46,13 @@ revealTargets.forEach((el) => revealObserver.observe(el));
 
 // ==========================================================
 // FILTRO DO BLOG (Livros / Filmes / Artigos)
+// Livros vive numa lista própria (#blogLivros); Filmes e Artigos
+// dividem a grade de cards (#blogGrid). Destaques some fora do "Tudo".
 // ==========================================================
 const blogFilters = document.querySelectorAll(".blog-filter");
-const postCards = document.querySelectorAll(".post-card");
+const blogDestaquesWrap = document.getElementById("blogDestaquesWrap");
+const gridCards = document.querySelectorAll("#blogGrid .post-card");
+const livroRows = document.querySelectorAll("#blogLivros .book-row");
 
 blogFilters.forEach((filter) => {
   filter.addEventListener("click", () => {
@@ -64,25 +65,12 @@ blogFilters.forEach((filter) => {
     filter.classList.add("is-active");
     filter.setAttribute("aria-selected", "true");
 
-    postCards.forEach((card) => {
+    blogDestaquesWrap.classList.toggle("is-hidden", target !== "all");
+    livroRows.forEach((row) => row.classList.toggle("is-hidden", !(target === "all" || target === "livro")));
+    blogGrid.classList.toggle("is-hidden", target === "livro");
+    gridCards.forEach((card) => {
       const show = target === "all" || card.dataset.category === target;
       card.classList.toggle("is-hidden", !show);
     });
   });
-});
-
-// ==========================================================
-// HEADER: sombra sutil ao rolar + botão voltar ao topo
-// ==========================================================
-const nav = document.getElementById("nav");
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  const scrolled = window.scrollY > 40;
-  nav.style.boxShadow = scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none";
-  backToTop.classList.toggle("is-visible", window.scrollY > 500);
-});
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
 });

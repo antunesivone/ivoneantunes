@@ -190,7 +190,6 @@ CREATE TABLE swipes (
 <h3>Aplicação prática</h3>
 <p>Carnegie prescrevia exercícios imediatos: discursos de dois minutos sem interrupção, narrativas diárias, participação em oportunidades de fala, autogravação para feedback, e leitura em voz alta diária. Como ele resume: "Falar bem não é dom, é hábito desenvolvido através da prática consistente."</p>
 
-<p><em>Resumo baseado no artigo <a href="https://leituradevalor.com.br/como-falar-em-publico-dale-carnegie-resumo/" target="_blank" rel="noopener">Leitura de Valor — Como Falar em Público e Encantar as Pessoas</a>.</em></p>
 `,
   },
   {
@@ -214,8 +213,6 @@ CREATE TABLE swipes (
 
 <h3>Da teoria à prática</h3>
 <p>O diferencial do livro em relação a obras mais teóricas sobre IE é o foco em técnicas aplicáveis: como aplicar autoconsciência numa reunião tensa, como se motivar diante de uma meta distante, e como usar a própria inteligência emocional nas relações com colegas, subordinados e superiores — não apenas entender o conceito, mas treiná-lo no dia a dia de trabalho.</p>
-
-<p><em>Resumo elaborado com apoio de um artigo acadêmico que analisa a aplicação da IE na liderança a partir de Weisinger (1997) e Goleman (2001): <a href="https://www.aedb.br/seget/arquivos/artigos11/38814405.pdf" target="_blank" rel="noopener">"A Importância da Inteligência Emocional na Atuação de um Líder" (SEGeT)</a>.</em></p>
 `,
   },
   {
@@ -236,8 +233,6 @@ CREATE TABLE swipes (
 
 <h3>Protagonismo, não espera</h3>
 <p>Um dos fios condutores mais fortes do livro: a maioria dos profissionais não trava por falta de talento técnico. Trava porque terceiriza a própria agência, esperando um "sinal" — o chefe que enxerga, a reestruturação que favorece, o momento de coragem que nunca chega sozinho. O livro nasce exatamente dessa fresta entre a intenção e a execução.</p>
-
-<p><em>Resumo baseado em reportagens sobre o livro: <a href="https://mundorh.com.br/luciano-santos-reune-23-vozes-para-mostrar-que-carreira-nao-e-sorte-e-acao/" target="_blank" rel="noopener">Mundo RH</a> e <a href="https://www.linkedin.com/pulse/carreira-%C3%A9-a%C3%A7%C3%A3o-23-hist%C3%B3rias-que-mostram-n%C3%A3o-sorte-com-luciano-santos-g0lvc/" target="_blank" rel="noopener">LinkedIn — Luciano Santos</a>.</em></p>
 `,
   },
   {

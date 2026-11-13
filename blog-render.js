@@ -47,6 +47,53 @@ function criarCardPostHTML(post) {
     </article>`;
 }
 
+/** Linha de livro no estilo lista editorial (capa à esquerda, sem corte, + resenha à direita). */
+function criarLivroRowHTML(post) {
+  const mediaInterna = post.cover
+    ? `<img loading="lazy" decoding="async" src="${escaparHtmlBlog(post.cover)}" alt="Capa do livro ${escaparHtmlBlog(post.titulo)}" class="book-row__img">`
+    : `<div class="book-row__placeholder"><span>📚</span></div>`;
+
+  return `
+    <article class="book-row" data-category="livro" data-slug="${post.slug}">
+      <a href="${urlDoPost(post.slug)}" class="book-row__cover" aria-label="Ler resenha: ${escaparHtmlBlog(post.titulo)}">${mediaInterna}</a>
+      <div class="book-row__body">
+        <h3 class="book-row__title"><a href="${urlDoPost(post.slug)}">${escaparHtmlBlog(post.titulo)}</a></h3>
+        <p class="book-row__meta">— ${escaparHtmlBlog(post.meta)}</p>
+        <p class="book-row__desc">${escaparHtmlBlog(post.resumo)}</p>
+        ${criarAutorBylineHTML(post)}
+        <div class="book-row__footer">
+          <a href="${urlDoPost(post.slug)}" class="post-card__readmore">Leia mais →</a>
+          <button type="button" class="post-card__icon post-card__icon--share book-row__share" data-share="${post.slug}" title="Compartilhar" aria-label="Compartilhar post">🔗</button>
+        </div>
+      </div>
+    </article>`;
+}
+
+/** Card de destaque (editorial, maior) usado na faixa "Destaques" no topo do blog. */
+function criarDestaqueHTML(post) {
+  const mediaInterna = post.cover
+    ? `<img loading="lazy" decoding="async" src="${escaparHtmlBlog(post.cover)}" alt="${escaparHtmlBlog(post.titulo)}" class="destaque-card__img">`
+    : `<div class="destaque-card__placeholder post-card__placeholder--${post.categoria}"><span>${BLOG_CATEGORIA_ICONE[post.categoria] || "📝"}</span></div>`;
+
+  return `
+    <a href="${urlDoPost(post.slug)}" class="destaque-card" aria-label="Ler: ${escaparHtmlBlog(post.titulo)}">
+      <div class="destaque-card__media">${mediaInterna}</div>
+      <div class="destaque-card__body">
+        <span class="blog-card__type blog-card__type--${post.categoria}">${post.tipoLabel}</span>
+        <h3 class="destaque-card__title">${escaparHtmlBlog(post.titulo)}</h3>
+      </div>
+    </a>`;
+}
+
+/** Bloco de autoria (avatar + nome + data) — mostra quem escreveu o post, sem citar fonte externa. */
+function criarAutorBylineHTML(post) {
+  return `
+    <div class="post-author">
+      <img src="img/eudev.webp" alt="Ivone Antunes" class="post-author__avatar" loading="lazy" decoding="async">
+      <p class="post-author__text"><strong>por Ivone Antunes</strong>, ${escaparHtmlBlog(post.data)}</p>
+    </div>`;
+}
+
 /** Web Share API quando disponível; senão copia o link pro clipboard e avisa visualmente. */
 async function compartilharPost(slug, titulo, botao) {
   const url = new URL(urlDoPost(slug), window.location.href).href;
