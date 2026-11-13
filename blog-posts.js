@@ -166,6 +166,109 @@ CREATE TABLE swipes (
 `,
   },
   {
+    slug: "como-falar-em-publico-dale-carnegie",
+    categoria: "livro",
+    tipoLabel: "📚 Livro",
+    titulo: "Como Falar em Público e Encantar as Pessoas",
+    meta: "Dale Carnegie · Sextante, 2020",
+    data: "Lido em 2026",
+    cover: "img/livro-como-falar-em-publico.webp",
+    resumo:
+      "Um método prático pra virar um orador melhor: paixão genuína pelo tema, histórias reais em vez de dados soltos, e a descoberta de que ansiedade e entusiasmo são a mesma sensação física — a diferença está no rótulo mental que a gente dá a ela.",
+    texto: `
+<p>Dale Carnegie apresenta um método prático para qualquer pessoa se tornar um orador eficaz, baseado em três décadas ensinando milhares de profissionais. A premissa central: o medo de falar em público é uma habilidade que pode ser aprendida, não um dom natural.</p>
+
+<h3>Os sete princípios fundamentais</h3>
+<p>Carnegie estrutura seu ensino em sete pilares: falar com paixão genuína sobre temas que importam; usar narrativas reais, que o cérebro retém muito melhor do que dados abstratos; preparar-se intensamente antes de qualquer apresentação; manter contato visual autêntico com a plateia; dominar o uso do silêncio como ferramenta de impacto; finalizar com um chamado à ação; e praticar consistentemente até desenvolver instinto natural.</p>
+
+<h3>Vencendo o medo</h3>
+<p>Uma descoberta central do livro: ansiedade e entusiasmo produzem sensações físicas idênticas — a diferença está no rótulo mental que damos a elas. Carnegie recomenda transformar o nervosismo em animação visível, concentrando-se no bem-estar da audiência em vez de em si mesmo.</p>
+
+<h3>Estrutura de um discurso memorável</h3>
+<p>A abertura deve impactar nos primeiros segundos através de histórias, perguntas provocadoras ou dados surpreendentes. O desenvolvimento se estrutura em no máximo três pontos principais conectados naturalmente. O fechamento, cuidadosamente preparado, é o que permanece na memória da plateia.</p>
+
+<h3>Aplicação prática</h3>
+<p>Carnegie prescrevia exercícios imediatos: discursos de dois minutos sem interrupção, narrativas diárias, participação em oportunidades de fala, autogravação para feedback, e leitura em voz alta diária. Como ele resume: "Falar bem não é dom, é hábito desenvolvido através da prática consistente."</p>
+
+<p><em>Resumo baseado no artigo <a href="https://leituradevalor.com.br/como-falar-em-publico-dale-carnegie-resumo/" target="_blank" rel="noopener">Leitura de Valor — Como Falar em Público e Encantar as Pessoas</a>.</em></p>
+`,
+  },
+  {
+    slug: "inteligencia-emocional-no-trabalho-weisinger",
+    categoria: "livro",
+    tipoLabel: "📚 Livro",
+    titulo: "Inteligência Emocional no Trabalho",
+    meta: "Hendrie Weisinger, PhD · Objetiva, 1997",
+    data: "Lido em 2026",
+    cover: "img/livro-inteligencia-emocional-trabalho.webp",
+    resumo:
+      "Antes de Goleman virar mainstream, Weisinger já propunha aplicar inteligência emocional dentro das organizações: autopercepção, autorregulação, motivação, empatia e habilidade social como competências treináveis, não traços de personalidade fixos.",
+    texto: `
+<p>Publicado originalmente em 1997, este livro aplica o conceito de Inteligência Emocional (IE), então recém-popularizado por Daniel Goleman, especificamente ao ambiente corporativo. A proposta central, descrita na própria capa, é "aplicar os conceitos revolucionários da I.E. nas relações profissionais, reduzindo o stress e aumentando a satisfação, eficiência e competitividade".</p>
+
+<h3>As cinco competências</h3>
+<p>Weisinger organiza a IE em cinco competências emocionais e sociais básicas: <strong>autopercepção</strong> (compreender e administrar as próprias emoções de forma consciente), <strong>autorregulação</strong> (autocontrole para sustentar um bom desempenho mesmo sob pressão), <strong>motivação</strong> (direcionar as próprias emoções a serviço de um objetivo), <strong>empatia</strong> (perceber os sentimentos dos outros para construir sintonia) e <strong>habilidade social</strong> (desenvoltura em relacionamentos interpessoais).</p>
+
+<h3>Por que isso importa para quem lidera</h3>
+<p>O argumento central é que habilidades técnicas resolvem problemas, mas são as habilidades emocionais que determinam se um gestor consegue manter uma equipe funcionando sob pressão, feedback difícil ou mudança constante. Ignorar o lado emocional do comportamento organizacional — tratando pessoas como se decidissem de forma puramente racional — é, segundo o livro, um dos erros mais comuns de liderança.</p>
+
+<h3>Da teoria à prática</h3>
+<p>O diferencial do livro em relação a obras mais teóricas sobre IE é o foco em técnicas aplicáveis: como aplicar autoconsciência numa reunião tensa, como se motivar diante de uma meta distante, e como usar a própria inteligência emocional nas relações com colegas, subordinados e superiores — não apenas entender o conceito, mas treiná-lo no dia a dia de trabalho.</p>
+
+<p><em>Resumo elaborado com apoio de um artigo acadêmico que analisa a aplicação da IE na liderança a partir de Weisinger (1997) e Goleman (2001): <a href="https://www.aedb.br/seget/arquivos/artigos11/38814405.pdf" target="_blank" rel="noopener">"A Importância da Inteligência Emocional na Atuação de um Líder" (SEGeT)</a>.</em></p>
+`,
+  },
+  {
+    slug: "carreira-e-acao-luciano-santos",
+    categoria: "livro",
+    tipoLabel: "📚 Livro",
+    titulo: "Carreira é Ação",
+    meta: "Luciano Santos (organizador) · Gente Autoridade, 2026",
+    data: "Lido em 2026",
+    cover: "img/livro-carreira-e-acao.webp",
+    resumo:
+      "23 profissionais contam, sem filtro, os erros e mudanças de rota que construíram carreiras que pareciam improváveis. A mensagem que amarra tudo: carreira não trava por falta de talento técnico — trava quando a gente terceiriza a própria agência, esperando um sinal que nunca vem sozinho.",
+    texto: `
+<p>Organizado por Luciano Santos, o livro reúne 23 profissionais para compartilharem as histórias e aprendizados por trás de carreiras que o organizador considera excepcionais. Em vez de trajetórias contadas só pelas conquistas, a obra reúne relatos sobre erros, inseguranças, mudanças de rota e decisões difíceis.</p>
+
+<h3>Tema central</h3>
+<p>A mensagem que conecta os 23 relatos: construir uma carreira não depende apenas de sorte, reconhecimento externo ou de um caminho previamente definido. Escolhas, experimentação, posicionamento, construção de relações e capacidade de mudar de rota aparecem como os elementos que de fato transformam uma trajetória profissional — daí o "risco" no título original, "Carreira é Ação (não sorte)".</p>
+
+<h3>Protagonismo, não espera</h3>
+<p>Um dos fios condutores mais fortes do livro: a maioria dos profissionais não trava por falta de talento técnico. Trava porque terceiriza a própria agência, esperando um "sinal" — o chefe que enxerga, a reestruturação que favorece, o momento de coragem que nunca chega sozinho. O livro nasce exatamente dessa fresta entre a intenção e a execução.</p>
+
+<p><em>Resumo baseado em reportagens sobre o livro: <a href="https://mundorh.com.br/luciano-santos-reune-23-vozes-para-mostrar-que-carreira-nao-e-sorte-e-acao/" target="_blank" rel="noopener">Mundo RH</a> e <a href="https://www.linkedin.com/pulse/carreira-%C3%A9-a%C3%A7%C3%A3o-23-hist%C3%B3rias-que-mostram-n%C3%A3o-sorte-com-luciano-santos-g0lvc/" target="_blank" rel="noopener">LinkedIn — Luciano Santos</a>.</em></p>
+`,
+  },
+  {
+    slug: "mulheres-ousadas-chegam-mais-longe",
+    categoria: "livro",
+    tipoLabel: "📚 Livro",
+    titulo: "Mulheres Ousadas Chegam Mais Longe",
+    meta: "Lois P. Frankel, PhD · Editora Gente, 13ª edição",
+    data: "Lido em 2026",
+    cover: "img/livro-mulheres-ousadas.webp",
+    resumo:
+      "101 erros inconscientes que atrapalham a carreira de mulheres, da coach executiva Lois Frankel — do excesso de trabalho sem limite até pedir desculpas por tudo. A ideia central: o ambiente de trabalho é um jogo com regras próprias, e fingir que não é um jogo é, em si, um dos erros.",
+    texto: `
+<p>Lois P. Frankel, coach executiva de renome internacional, reúne 101 comportamentos inconscientes — muitos deles socializados desde a infância — que atrapalham a carreira de mulheres no ambiente corporativo.</p>
+
+<h3>Mentalidade e estratégia</h3>
+<p>A obra parte da ideia de que "o ambiente de trabalho é um jogo" com regras específicas a serem aprendidas e dominadas. Frankel trata a política corporativa como ferramenta legítima, não como algo a evitar, e recomenda desenvolver relacionamentos estratégicos deliberadamente, em vez de confiar que o bom trabalho "fala por si".</p>
+
+<h3>Gestão de tempo e energia</h3>
+<p>Um erro comum apontado pelo livro: trabalhar excessivamente, sem limite, achando que isso por si só gera reconhecimento. A autora recomenda estabelecer limites claros de horário, fazer pausas regulares, e principalmente não fazer o trabalho alheio — porque promoções tendem a ir para quem apresenta resultados visíveis, não necessariamente para quem mais executa nos bastidores.</p>
+
+<h3>Marca pessoal e visibilidade</h3>
+<p>"Fora da vista, fora da mente, fora do mercado" resume outro eixo do livro: a necessidade de construir e comunicar a própria marca pessoal de forma consciente, identificando o que diferencia cada profissional, e articulando conquistas de forma estruturada — por exemplo, pelo modelo <strong>PAR</strong> (Problema, Ação, Resultado), em vez de deixar o trabalho "falar sozinho".</p>
+
+<h3>Autonomia e assertividade</h3>
+<p>A segurança financeira é tratada como pré-requisito para decisões profissionais verdadeiramente livres — daí a recomendação de pesquisar salários competitivos e negociar aumentos proativamente, em vez de esperar que sejam oferecidos. O livro também alerta contra um padrão recorrente: confundir ajudar colegas com ser explorada, e pedir desculpas por coisas que não exigem desculpa.</p>
+
+<p><em>Resumo baseado em análise do livro disponível em <a href="https://www.franmateus.ia.br/2026/06/licoes-mulheres-ousadas-chegam-mais-longe.html" target="_blank" rel="noopener">franmateus.ia.br</a>.</em></p>
+`,
+  },
+  {
     slug: "design-de-prompt-vs-engenharia-de-prompt",
     categoria: "profissional",
     tipoLabel: "📝 Artigo",
