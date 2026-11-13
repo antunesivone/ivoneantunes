@@ -94,6 +94,40 @@ function criarAutorBylineHTML(post) {
     </div>`;
 }
 
+/** Escolhe a próxima leitura ao final do post: prioriza o próximo post da
+ * mesma categoria (ordem do array, com volta ao início); se a categoria só
+ * tiver esse post, cai pra qualquer outro post do blog (também com volta ao início). */
+function escolherProximaLeitura(post) {
+  const mesmaCategoria = BLOG_POSTS.filter((p) => p.categoria === post.categoria);
+  const listaBase = mesmaCategoria.length > 1 ? mesmaCategoria : BLOG_POSTS;
+  const indiceAtual = listaBase.findIndex((p) => p.slug === post.slug);
+  if (indiceAtual === -1 || listaBase.length <= 1) return null;
+  return listaBase[(indiceAtual + 1) % listaBase.length];
+}
+
+/** Bloco "Próxima leitura" ao final de todo post — livro, filme ou artigo. */
+function criarProximaLeituraHTML(post) {
+  const proximo = escolherProximaLeitura(post);
+  if (!proximo) return "";
+
+  const mediaInterna = proximo.cover
+    ? `<img loading="lazy" decoding="async" src="${escaparHtmlBlog(proximo.cover)}" alt="${escaparHtmlBlog(proximo.titulo)}" class="next-read__img">`
+    : `<div class="next-read__placeholder post-card__placeholder--${proximo.categoria}"><span>${BLOG_CATEGORIA_ICONE[proximo.categoria] || "📝"}</span></div>`;
+
+  return `
+    <div class="next-read">
+      <p class="section__eyebrow">Próxima leitura</p>
+      <a href="${urlDoPost(proximo.slug)}" class="next-read__card">
+        <div class="next-read__media">${mediaInterna}</div>
+        <div class="next-read__body">
+          <span class="blog-card__type blog-card__type--${proximo.categoria}">${proximo.tipoLabel}</span>
+          <h3 class="next-read__title">${escaparHtmlBlog(proximo.titulo)}</h3>
+          <p class="next-read__desc">${escaparHtmlBlog(proximo.resumo)}</p>
+        </div>
+      </a>
+    </div>`;
+}
+
 /** Web Share API quando disponível; senão copia o link pro clipboard e avisa visualmente. */
 async function compartilharPost(slug, titulo, botao) {
   const url = new URL(urlDoPost(slug), window.location.href).href;

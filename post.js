@@ -61,6 +61,7 @@ if (!post) {
     ${criarAutorBylineHTML(post)}
     <div class="post-detail__text">${post.texto}</div>
     <button type="button" class="post-card__icon post-detail__share" data-share="${post.slug}" title="Compartilhar" aria-label="Compartilhar post">🔗</button>
+    ${criarProximaLeituraHTML(post)}
   `;
 
   ligarBotoesCompartilhar(postContent);

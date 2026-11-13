@@ -259,8 +259,6 @@ CREATE TABLE swipes (
 
 <h3>Autonomia e assertividade</h3>
 <p>A segurança financeira é tratada como pré-requisito para decisões profissionais verdadeiramente livres — daí a recomendação de pesquisar salários competitivos e negociar aumentos proativamente, em vez de esperar que sejam oferecidos. O livro também alerta contra um padrão recorrente: confundir ajudar colegas com ser explorada, e pedir desculpas por coisas que não exigem desculpa.</p>
-
-<p><em>Resumo baseado em análise do livro disponível em <a href="https://www.franmateus.ia.br/2026/06/licoes-mulheres-ousadas-chegam-mais-longe.html" target="_blank" rel="noopener">franmateus.ia.br</a>.</em></p>
 `,
   },
   {
@@ -270,7 +268,7 @@ CREATE TABLE swipes (
     titulo: "Design de Prompt e Engenharia de Prompt: uma distinção conceitual",
     meta: "Artigo · Prompt Engineering",
     data: "Publicado em 2026",
-    cover: null,
+    cover: "img/artigo-prompt-cover.webp",
     resumo:
       "Design de Prompt e Engenharia de Prompt são confundidos com frequência por quem começa a estudar IA generativa. A partir da análise de um material de referência sobre o tema, este artigo separa as duas competências e aplica a distinção a um estudo de caso real.",
     texto: `
