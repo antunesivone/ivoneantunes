@@ -705,6 +705,8 @@ p { margin: 0; }
   font-size: 0.92rem;
   line-height: 1.6;
 }
+.quali-card__highlight a { color: var(--accent); font-style: normal; text-decoration: underline; text-underline-offset: 2px; }
+.quali-card__highlight a:hover { color: var(--accent-2); }
 .quali-card__subtitle {
   font-family: var(--font-mono);
   font-size: 0.76rem;
