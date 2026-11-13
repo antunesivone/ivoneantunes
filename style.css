@@ -469,6 +469,7 @@ p { margin: 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  scroll-margin-top: 90px;
   transition: transform var(--transition), border-color var(--transition);
 }
 .project-card:hover { transform: translateY(-4px); border-color: var(--accent-2); }
