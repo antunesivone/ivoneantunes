@@ -565,6 +565,29 @@ p { margin: 0; }
 }
 .link-arrow:hover { opacity: 0.7; }
 
+/* Grade leve do index.html: 1 capa + título + link (galeria completa
+   e descrição só carregam na página individual, projeto.html). */
+.project-card--light .project-card__image {
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--bg);
+}
+.project-card--light .project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+.project-card--light:hover .project-card__image img { transform: scale(1.04); }
+.project-card--light .project-card__title a { color: var(--text); transition: color var(--transition); }
+.project-card--light .project-card__title a:hover { color: var(--accent); }
+
+/* Página individual do projeto (projeto.html): título maior, sem o
+   lift de hover do card dentro da grade. */
+.project-card--detail { cursor: default; }
+.project-card--detail:hover { transform: none; }
+.project-card--detail .project-card__title { font-size: 1.8rem; }
+
 /* ==========================================================
    SKILLS
    ========================================================== */

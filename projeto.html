@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="projPageTitle">Projeto — Ivone Antunes</title>
+<meta name="description" id="projPageDescription" content="Projeto do portfólio de Ivone Antunes.">
+<link rel="canonical" id="projPageCanonical" href="https://antunesivone.github.io/ivoneantunes/projeto.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314161f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23e8a33d' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Ivone Antunes">
+<meta property="og:title" id="projPageOgTitle" content="Projeto — Ivone Antunes">
+<meta property="og:description" id="projPageOgDescription" content="Projeto do portfólio de Ivone Antunes.">
+<meta property="og:url" id="projPageOgUrl" content="https://antunesivone.github.io/ivoneantunes/projeto.html">
+<meta property="og:image" id="projPageOgImage" content="https://antunesivone.github.io/ivoneantunes/img/eudev.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" id="projPageTwitterTitle" content="Projeto — Ivone Antunes">
+<meta name="twitter:description" id="projPageTwitterDescription" content="Projeto do portfólio de Ivone Antunes.">
+<meta name="twitter:image" id="projPageTwitterImage" content="https://antunesivone.github.io/ivoneantunes/img/eudev.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html#top" class="nav__brand">
+      <span class="nav__brand-bracket">&lt;</span>Ivone Antunes<span class="nav__brand-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#about" class="nav__link"><span class="nav__num"></span>Sobre</a>
+      <a href="index.html#services" class="nav__link"><span class="nav__num"></span>Serviços</a>
+      <a href="index.html#projects" class="nav__link is-active"><span class="nav__num"></span>Portfólio</a>
+      <a href="index.html#skills" class="nav__link"><span class="nav__num"></span>Skills</a>
+      <a href="index.html#qualifications" class="nav__link"><span class="nav__num"></span>Qualificações</a>
+      <a href="blog.html" class="nav__link"><span class="nav__num"></span>Blog</a>
+      <a href="index.html#fun-facts" class="nav__link"><span class="nav__num"></span>Curiosidades</a>
+      <a href="index.html#contact" class="nav__link nav__link--cta">Contato</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="section blog-page">
+    <a href="index.html#projects" class="blog-back">← Voltar ao portfólio</a>
+    <div id="projetoContent"><!-- preenchido por projeto.js a partir de PROJETOS --></div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__brand">&lt;Portfólio Ivone Antunes/&gt;</p>
+    <p class="footer__text">Feito com café ☕ e algumas linhas de JavaScript.</p>
+    <p class="footer__copy">© <span id="year"></span> Desenvolvido por Ivone Antunes| venustech | Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="projetos-data.js"></script>
+<script src="common.js"></script>
+<script src="projeto.js"></script>
+</body>
+</html>

@@ -72,6 +72,31 @@ if (homeBlogGrid) {
 }
 
 // ==========================================================
+// GRADE LEVE DE PROJETOS (1 capa + título + link) — a partir de
+// PROJETOS (projetos-data.js). A galeria completa de cada projeto
+// (todas as imagens, descrição, carrossel) só carrega na página
+// individual (projeto.html?slug=...), igual ao padrão do blog.
+// ==========================================================
+const projectsGrid = document.getElementById("projectsGrid");
+if (projectsGrid) {
+  projectsGrid.innerHTML = PROJETOS.map(
+    (p) => `
+    <article class="project-card project-card--light" data-category="${p.categoria}">
+      <a href="projeto.html?slug=${encodeURIComponent(p.slug)}" class="project-card__image" aria-label="Ver projeto: ${escaparHtmlBlog(p.titulo)}">
+        <img loading="lazy" decoding="async" src="${escaparHtmlBlog(p.cover.src)}" alt="${escaparHtmlBlog(p.cover.alt)}">
+      </a>
+      <div class="project-card__body">
+        <span class="project-card__tag">${escaparHtmlBlog(p.tag)}</span>
+        <h3 class="project-card__title"><a href="projeto.html?slug=${encodeURIComponent(p.slug)}">${escaparHtmlBlog(p.titulo)}</a></h3>
+        <div class="project-card__links">
+          <a href="projeto.html?slug=${encodeURIComponent(p.slug)}" class="link-arrow">Ver projeto →</a>
+        </div>
+      </div>
+    </article>`
+  ).join("");
+}
+
+// ==========================================================
 // SCROLL REVEAL (fade + slide-up ao entrar na tela)
 // ==========================================================
 const revealTargets = document.querySelectorAll(
@@ -138,77 +163,6 @@ projectFilters.forEach((filter) => {
       card.classList.toggle("is-hidden", !show);
     });
   });
-});
-
-// ==========================================================
-// CARROSSEL DE IMAGENS NOS CARDS DO PORTFÓLIO
-// ==========================================================
-// A inicialização (goTo(0)) só roda quando o card entra perto da tela —
-// antes disso, até o pré-carregamento dos vizinhos do carrossel disparava
-// ~2 downloads de imagem por card, pra TODOS os cards, na carga da
-// página inteira (muitos ainda fora de tela). É o maior peso da home.
-function iniciarCarrossel(slides) {
-  const images = Array.from(slides.querySelectorAll("img"));
-  const wrapper = slides.closest(".project-card__image");
-  const prevBtn = wrapper.querySelector(".project-card__nav--prev");
-  const nextBtn = wrapper.querySelector(".project-card__nav--next");
-  const dotsEl = wrapper.querySelector(".project-card__dots");
-  let current = 0;
-
-  if (images.length <= 1) {
-    prevBtn.classList.add("is-hidden");
-    nextBtn.classList.add("is-hidden");
-    if (images[0]) images[0].classList.add("is-active");
-    return;
-  }
-
-  const dots = images.map((_, i) => {
-    const dot = document.createElement("button");
-    dot.type = "button";
-    dot.className = "project-card__dot";
-    dot.setAttribute("aria-label", `Ir para imagem ${i + 1}`);
-    dot.addEventListener("click", () => goTo(i));
-    dotsEl.appendChild(dot);
-    return dot;
-  });
-
-  function hydrate(img) {
-    if (img && img.dataset.src) {
-      img.src = img.dataset.src;
-      delete img.dataset.src;
-    }
-  }
-
-  function goTo(index) {
-    images[current].classList.remove("is-active");
-    dots[current].classList.remove("is-active");
-    current = (index + images.length) % images.length;
-    hydrate(images[current]);
-    images[current].classList.add("is-active");
-    dots[current].classList.add("is-active");
-    // pré-carrega os vizinhos pra próxima/anterior já saírem na hora
-    hydrate(images[(current + 1) % images.length]);
-    hydrate(images[(current - 1 + images.length) % images.length]);
-  }
-
-  prevBtn.addEventListener("click", () => goTo(current - 1));
-  nextBtn.addEventListener("click", () => goTo(current + 1));
-  goTo(0);
-}
-
-const carouselObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        iniciarCarrossel(entry.target);
-        carouselObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { rootMargin: "400px 0px" }
-);
-document.querySelectorAll(".project-card__slides[data-carousel]").forEach((slides) => {
-  carouselObserver.observe(slides);
 });
 
 // ==========================================================
