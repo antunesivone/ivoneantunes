@@ -140,6 +140,15 @@ qualiTabs.forEach((tab) => {
   });
 });
 
+// Chegando de um link "Voltar para Experiência Profissional" (projeto.html,
+// post.html) via index.html?tab=experience#qualifications — abre direto na
+// aba Experiência em vez de ficar na aba padrão (Educação).
+const tabParam = new URLSearchParams(window.location.search).get("tab");
+if (tabParam) {
+  const tabAlvo = document.querySelector(`.quali-tab[data-tab="${tabParam}"]`);
+  if (tabAlvo) tabAlvo.click();
+}
+
 // ==========================================================
 // FILTRO DE PROJETOS (E-commerce / Logística / Empresas / IA)
 // ==========================================================

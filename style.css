@@ -803,6 +803,13 @@ p { margin: 0; }
   transition: color var(--transition);
 }
 .blog-back:hover { color: var(--accent); }
+.project-back-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.project-back-links .blog-back { margin-bottom: 0; }
 
 /* Destaques — faixa editorial de 3 cards grandes no topo do blog, visível só em "Tudo" */
 #blogDestaquesWrap.is-hidden { display: none; }
